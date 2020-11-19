@@ -1,0 +1,475 @@
+[drug]:identity_immunities
+GroupControlSection	= spawn_group
+discovery_dependency =
+;$spawn 				= "food and drugs\drug"
+$prefetch 			= 8
+class				= S_FOOD
+cform				= skeleton
+visual				= dynamics\items\meds\first_aid.ogf
+description			= default
+inv_name			= default
+inv_name_short		= default
+inv_weight			= 0.01
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 3
+inv_grid_y			= 18
+cost				= 1
+
+; eatable item
+eat_health			= 0
+eat_satiety			= 0
+eat_power			= 0
+eat_max_power		= 0
+eat_radiation		= 0
+eat_alcohol			= 0
+wounds_heal_perc	= 0
+eat_portions_num	= 1
+
+boost_time				= 0.0
+boost_max_weight		= 0.0
+boost_health_restore	= 0.0
+boost_power_restore		= 0.0
+boost_radiation_restore	= 0.0
+boost_bleeding_restore	= 0.0
+
+boost_radiation_protection	= 0.0
+boost_telepat_protection 	= 0.0
+boost_chemburn_protection 	= 0.0
+
+boost_burn_immunity			= 0.0
+boost_shock_immunity		= 0.0
+boost_radiation_immunity	= 0.0
+boost_telepat_immunity		= 0.0
+boost_chemburn_immunity 	= 0.0
+boost_strike_immunity		= 0.0
+boost_wound_immunity		= 0.0
+boost_explosion_immunity	= 0.0
+boost_fire_wound_immunity	= 0.0
+
+use_sound			= interface\inv_medkit
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	DRUGS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[bandage]:drug
+$spawn 				= "food and drugs\bandage"
+visual				= dynamics\items\meds\bandage.ogf	;dynamics\devices\dev_bandage\dev_bandage.ogf
+
+inv_name			= st_bandage
+inv_name_short		= st_bandage
+description			= st_bandage_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 6
+inv_grid_y         = 29
+
+cost				= 110
+inv_weight			= 0.050
+
+boost_time				= 5.0
+
+boost_bleeding_restore	= 0.005
+
+use_sound			= interface\inv_bandage
+
+[ipp_av3]:drug
+$spawn 				= "food and drugs\ipp_av3"
+visual				= dynamics\items\meds\ipp_av3.ogf
+
+inv_name			= st_ipp_av3
+inv_name_short		= st_ipp_av3
+description			= st_ipp_av3_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 7
+inv_grid_y         = 29
+
+cost				= 400
+inv_weight			= 0.120
+
+boost_time				= 5.0
+
+boost_bleeding_restore	= 0.03
+
+use_sound			= interface\inv_bandage
+
+[fcp09]:drug
+$spawn 				= "food and drugs\fcp"
+visual				= dynamics\items\meds\fcp.ogf
+
+inv_name			= st_fcp
+inv_name_short		= st_fcp
+description			= st_fcp_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 8
+inv_grid_y         = 29
+
+cost				= 2100
+inv_weight			= 0.215
+
+boost_time				= 5.0
+
+boost_bleeding_restore	= 0.1
+
+use_sound			= interface\inv_bandage
+
+;antirad new
+[antirad]:drug
+$spawn 				= "food and drugs\antirad"
+visual				= dynamics\items\meds\mexamine.ogf	;dynamics\devices\dev_antirad\dev_antirad.ogf
+
+inv_name			= st_antirad
+inv_name_short		= st_antirad
+description			= st_antirad_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 6
+inv_grid_y         = 32
+
+cost				= 1065
+inv_weight			= 0.010
+
+;eatable item
+;eat_radiation = -0.5
+
+boost_time			= 10.0
+boost_radiation_restore	= 0.01
+
+eat_health				= -0.03
+
+use_sound			= interface\inv_pills
+
+;medikits new
+[medkit_script]:drug ;Do not use! Used in xr_wounded
+;$spawn 				= "food and drugs\medkit_script"
+visual				= dynamics\devices\dev_aptechka\dev_aptechka_low.ogf
+inv_name			= st_medkit
+inv_name_short		= st_medkit
+description			= st_medkit_descr
+inv_weight			= 0.1
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 6
+inv_grid_y			= 14
+cost				= 300
+
+;eatable item
+eat_health			= 0.5
+eat_max_power		= 0.1
+eat_radiation		= -0.05
+wounds_heal_perc	= 0.1
+eat_portions_num	= 1
+
+use_sound			= interface\inv_medkit
+
+
+[medkit]:drug
+$spawn 				= "food and drugs\medkit"
+visual				= dynamics\items\meds\first_aid.ogf	;dynamics\devices\dev_aptechka\dev_aptechka_low.ogf
+
+inv_name			= st_medkit
+inv_name_short		= st_medkit
+description			= st_medkit_descr
+
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 6
+inv_grid_y         = 28
+
+cost				= 880
+inv_weight			= 0.300
+
+boost_time				= 10.0
+
+boost_health_restore	= 0.005
+boost_radiation_restore	= 0.0
+boost_bleeding_restore	= 0.005
+
+use_sound			= interface\inv_medkit
+
+[medkit_army]:drug
+$spawn 				= "food and drugs\medkit_army"
+visual				= dynamics\items\meds\ai_n2.ogf	;dynamics\devices\dev_aptechka\dev_aptechka_high.ogf
+
+inv_name			= st_ai_n2
+inv_name_short		= st_ai_n2
+description			= st_ai_n2_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 7
+inv_grid_y         = 28
+
+cost				= 4900
+inv_weight			= 0.800
+
+boost_time				= 5.0
+
+boost_health_restore	= 0.02
+boost_radiation_restore	= 0.0
+boost_bleeding_restore	= 0.03
+
+use_sound			= interface\inv_medkit
+
+[medkit_scientic]:drug
+$spawn 				= "food and drugs\medkit_scientic"
+visual				= dynamics\items\meds\kimgz.ogf	;dynamics\devices\dev_aptechka\dev_aptechka_mid.ogf
+inv_name			= st_kimgz
+inv_name_short		= st_kimgz
+description			= st_kimgz_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 8
+inv_grid_y         = 28
+
+cost				= 5750
+inv_weight			= 0.500
+
+boost_time				= 10.0
+
+boost_health_restore	= 0.01
+boost_radiation_restore	= 0.01
+boost_bleeding_restore	= 0.03
+
+use_sound			= interface\inv_medkit
+
+;boosters
+[drug_booster]:drug
+$spawn 				= "food and drugs\drug_booster"
+visual				= dynamics\items\meds\hercules.ogf	;dynamics\equipments\medical\drug_booster.ogf
+
+inv_name			= st_drug_booster
+inv_name_short		= st_drug_booster
+description			= st_drug_booster_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 6
+inv_grid_y         = 30
+
+cost				= 2420
+inv_weight			= 0.250
+
+boost_time			= 300.0
+
+boost_max_weight	= 20.0
+
+eat_health				= -0.03
+
+use_sound			= interface\inv_softdrink
+
+[drug_coagulant]:drug
+$spawn 				= "food and drugs\drug_coagulant"
+visual				= dynamics\items\meds\vicasol.ogf	;dynamics\equipments\medical\drug_coagulant.ogf
+
+inv_name			= st_drug_coagulant
+inv_name_short		= st_drug_coagulant
+description			= st_drug_coagulant_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 7
+inv_grid_y         = 31
+
+cost				= 80
+inv_weight			= 0.010
+
+boost_time				= 120.0
+
+boost_bleeding_restore	= 0.005
+
+use_sound			= interface\inv_pills
+
+[drug_psy_blockade]:drug
+$spawn 				= "food and drugs\drug_psy_blockade"
+visual				= dynamics\items\meds\psy_blockade.ogf	;dynamics\equipments\medical\drug_psy_blockade.ogf
+
+inv_name			= st_drug_psy_blockade
+inv_name_short		= st_drug_psy_blockade
+description			= st_drug_psy_blockade_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 8
+inv_grid_y         = 31
+
+cost				= 1800
+inv_weight			= 0.010
+
+boost_time				= 60.0
+
+boost_telepat_protection 	= 0.05
+
+eat_health				= -0.1
+
+use_sound			= interface\inv_pills
+
+[drug_antidot]:drug
+$spawn 				= "food and drugs\drug_antidot"
+visual				= dynamics\items\meds\antidot.ogf	;dynamics\equipments\medical\drug_antidot.ogf
+
+inv_name			= st_drug_antidot
+inv_name_short		= st_drug_antidot
+description			= st_drug_antidot_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 7
+inv_grid_y         = 33
+
+cost				= 1600
+inv_weight			= 0.020
+
+boost_time				= 60.0
+
+boost_chemburn_protection 	= 0.1
+
+eat_alcohol				= 0.1
+eat_health				= -0.1
+
+use_sound			= interface\inv_pills
+
+[ipp11]:drug
+$spawn 				= "food and drugs\ipp11"
+visual				= dynamics\items\meds\ipp11.ogf	;dynamics\equipments\medical\drug_antidot.ogf
+
+inv_name			= st_ipp11
+inv_name_short		= st_ipp11
+description			= st_ipp11_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 6
+inv_grid_y         = 33
+
+cost				= 260
+inv_weight			= 0.040
+
+boost_time				= 120.0
+
+boost_chemburn_protection 	= 0.01
+
+use_sound			= interface\inv_bandage
+
+[drug_radioprotector]:drug
+$spawn 				= "food and drugs\drug_radioprotector"
+visual				= dynamics\items\meds\radioprotector.ogf	;dynamics\equipments\medical\drug_radioprotector.ogf
+
+inv_name			= st_drug_radioprotector
+inv_name_short		= st_drug_radioprotector
+description			= st_drug_radioprotector_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 7
+inv_grid_y         = 32
+
+cost				= 900
+inv_weight			= 0.020
+
+boost_time					= 60.0
+
+boost_radiation_protection	= 0.015
+
+eat_health				= -0.1
+
+use_sound			= interface\inv_pills
+
+[drug_anabiotic]:drug
+$spawn 				= "food and drugs\drug_anabiotic"
+visual				= dynamics\items\meds\anabiotic.ogf	;dynamics\equipments\medical\drug_anabiotic.ogf
+
+inv_name			= st_drug_anabiotic
+inv_name_short		= st_drug_anabiotic
+description			= st_drug_anabiotic_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 6
+inv_grid_y         = 31
+
+cost				= 3000
+inv_weight			= 0.010
+
+eat_health				= -0.3
+
+use_sound			= interface\inv_pills
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	UNUSED
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;boosters below are not used for now
+;[health_restore_booster]:drug
+;$spawn 					= "food and drugs\health_restore_booster"
+;boost_time				= 20.0
+;boost_health_restore	= 0.1
+;
+;[max_weight_booster]:drug
+;$spawn 				= "food and drugs\max_weight_booster"
+;boost_time			= 20.0
+;boost_max_weight	= 100.0
+;
+;[wound_immunity_booster]:drug
+;$spawn 					= "food and drugs\wound_immunity_booster"
+;boost_time				= 20.0
+;boost_wound_immunity	= 1
+;
+;[telepat_immunity_booster]:drug
+;$spawn 					= "food and drugs\telepat_immunity_booster"
+;boost_time				= 20.0
+;boost_telepat_immunity	= 1
+;
+;[chemburn_immunity_booster]:drug
+;$spawn 					= "food and drugs\chemburn_immunity_booster"
+;boost_time				= 20.0
+;boost_chemburn_immunity	= 1
+;
+;[radiation_restore_booster]:drug
+;$spawn 					= "food and drugs\radiation_restore_booster"
+;boost_time				= 20.0
+;boost_radiation_restore	= 0.1
+;
+;[shock_immunity_booster]:drug
+;$spawn 					= "food and drugs\shock_immunity_booster"
+;boost_time				= 20.0
+;boost_shock_immunity	= 1
+;
+;[power_restore_booster]:drug
+;$spawn 				= "food and drugs\power_restore_booster"
+;boost_time			= 20.0
+;boost_power_restore	= 0.1
+;
+;[bleeding_restore_booster]:drug
+;$spawn 					= "food and drugs\bleeding_restore_booster"
+;boost_time				= 20.0
+;boost_bleeding_restore	= 0.1
+;
+;[burn_immunity_booster]:drug
+;$spawn 				= "food and drugs\burn_immunity_booster"
+;boost_time			= 20.0
+;boost_burn_immunity	= 1
+;
+;[explosion_immunity_booster]:drug
+;$spawn 						= "food and drugs\explosion_immunity_booster"
+;boost_time					= 20.0
+;boost_explosion_immunity	= 1
+;
+;[fire_wound_immunity_booster]:drug
+;$spawn 						= "food and drugs\fire_wound_immunity_booster"
+;boost_time					= 20.0
+;boost_fire_wound_immunity	= 1
+;
+;[strike_immunity_booster]:drug
+;$spawn 					= "food and drugs\strike_immunity_booster"
+;boost_time				= 20.0
+;boost_strike_immunity	= 1

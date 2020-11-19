@@ -1,0 +1,89 @@
+;------------------------------------------
+;		 Œ—“ﬁÃ ÃŒÕŒÀ»“¿
+;------------------------------------------
+
+[monolit_outfit]:outfit_base
+GroupControlSection	= spawn_group
+discovery_dependency 	= 
+$spawn 			= "outfit_mod\monolit_outfit"
+;$prefetch 			= 32
+class				= E_STLK
+cform           		= skeleton
+ef_equipment_type		= 4
+
+visual          		= dynamics\outfit_mod\monolit_outfit
+actor_visual		= actors\stalker_hero_mod\stalker_monolith_2.ogf
+player_hud_section	= hud_monolit_1	
+
+inv_name			= monolit_outfit_name
+inv_name_short		= monolit_outfit_name
+description			= monolit_outfit_description
+
+inv_weight			= 4.0
+
+inv_grid_width		= 2
+inv_grid_height		= 3
+inv_grid_x			= 34
+inv_grid_y			= 0
+
+upgr_icon_x			= 900
+upgr_icon_y			= 300
+upgr_icon_width		= 100
+upgr_icon_height   	= 150
+
+full_icon_name		= npc_icon_monolit_outfit
+
+cost				= 10000
+slot				= 6
+full_scale_icon		= 4,11
+
+immunities_sect		= sect_monolit_outfit_immunities
+
+; LOW RESISTANCE
+burn_protection 			= 0.045
+shock_protection 			= 0.045
+radiation_protection 			= 0.009
+chemical_burn_protection 		= 0.045
+telepatic_protection 			= 0.000
+
+strike_protection 			= 0.4
+explosion_protection 			= 0.4
+wound_protection			= 0.4
+
+fire_wound_protection  			= 0.4
+physic_strike_wound_immunity 		= 0.5
+hit_fraction_actor 			= 0.3
+control_inertion_factor 		= 1.2
+
+bones_koeff_protection 			= actor_armor_light
+
+control_inertion_factor = 1.2
+power_loss 			= 0.7
+
+artefact_count          = 2
+
+upgrades                = up_gr_firstab_stalker_outfit, up_gr_seconab_stalker_outfit, up_gr_thirdab_stalker_outfit
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_stalker_outfit
+
+[sect_monolit_outfit_immunities]
+burn_immunity				= 0.04
+strike_immunity				= 0.01
+shock_immunity				= 0.04
+wound_immunity				= 0.020
+radiation_immunity			= 0.00
+telepatic_immunity			= 0.00
+chemical_burn_immunity			= 0.04
+explosion_immunity			= 0.04
+fire_wound_immunity			= 0.012
+
+[sect_monolit_outfit_immunities_add]
+burn_immunity				= 0.04
+strike_immunity				= 0.01
+shock_immunity				= 0.04
+wound_immunity				= 0.020
+radiation_immunity			= 0.00
+telepatic_immunity			= 0.00
+chemical_burn_immunity			= 0.04
+explosion_immunity			= 0.04
+fire_wound_immunity			= 0.012

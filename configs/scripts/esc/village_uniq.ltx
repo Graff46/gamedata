@@ -1,0 +1,78 @@
+[logic@zabor]
+suitable = {=check_npc_name(zabor)}
+active = animpoint@zabor
+prior = 100
+
+[animpoint@zabor]
+cover_name = zabor_ap     ;Имя анимпоинта
+meet = meet@zabor
+
+[meet@zabor]
+use = true
+in_camp = true
+meet_dialog = esc_start_zabor
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[logic@galosh]
+suitable = {=check_npc_name(galosh)}
+active = animpoint@galosh
+prior = 101
+
+[animpoint@galosh]
+cover_name = galosh_ap     ;Имя анимпоинта
+;avail_animations = animpoint_sit_ass         ;Анимация
+meet = meet@galosh
+
+[meet@galosh]
+use = true
+in_camp = true
+meet_dialog = esc_start_galosh
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[logic@rast]
+suitable = {=check_npc_name(rast)}
+active = animpoint@rast
+prior = 102
+
+[animpoint@rast]
+cover_name = rast_ap     ;Имя анимпоинта
+meet = meet@rast
+
+[meet@rast]
+use = true
+in_camp = true
+meet_dialog = {-esc_rast_task1_report} esc_start_rast, {+esc_rast_task1_report -tunnel_rast_task2_report} esc_start_rast2, {+tunnel_rast_task2_report} esc_start_rast3
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[logic@esc_trader]
+suitable = {=check_npc_name(esc_trader)}
+active = animpoint@esc_trader
+prior = 103
+can_select_weapon = false
+level_spot = trader
+;trade = scripts\esc\smart\esc_trader_trade.ltx
+
+[animpoint@esc_trader]
+cover_name = esc_trader_ap     ;Имя анимпоинта
+meet = meet@esc_trader
+
+[meet@esc_trader]
+use = true
+in_camp = true
+meet_dialog = hello_dialog
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[logic@botanik]
+suitable = {=check_npc_name(botanik)}
+active = animpoint@botanik
+prior = 103
+
+[animpoint@botanik]
+cover_name = botanik_ap     ;Имя анимпоинта
+meet = meet@botanik
+
+[meet@botanik]
+use = true
+in_camp = true
+meet_dialog = esc_start_botanik
+

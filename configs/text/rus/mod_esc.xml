@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="esc_npc_zabor">
+		<text>Забор</text>
+	</string>
+	
+	<string id="esc_npc_botanik">
+		<text>Ботаник</text>
+	</string>	
+	
+	<string id="esc_npc_galosh">
+		<text>Галош</text>
+	</string>	
+	
+	<string id="esc_npc_rast">
+		<text>Ржавый</text>
+	</string>
+	
+	<string id="trader">
+		<text>Торговец</text>
+	</string>
+	
+	<string id="find_art_on_fabric">
+		<text>Найти артефакт</text>
+	</string>
+	
+	<string id="find_art_on_fabric_desc">
+		<text>Найти артефакт на базе бандитов на фабрике</text>
+	</string>
+
+	<string id="esc_npc_svistun">
+		<text>Свистун</text>
+	</string>
+	
+	<string id="quest_esc_tunnel">
+		<text>Найти артефакт у Свистуна</text>
+	</string>
+	
+	<string id="quest_esc_tunnel_desc">
+		<text>Найти артефакт у Свистуна пропавшего в подземелье</text>
+	</string>
+	
+	<string id="quest_esc_most">
+		<text>Устранение проблем</text>
+	</string>
+	
+	<string id="quest_esc_most_desc">
+		<text>Устранить бандитов под Ж/Д мостом</text>
+	</string>
+	
+	<string id="raport_rast">
+		<text>Отчитаться Ржавому</text>
+	</string>
+	
+	<string id="itm_radio_shot">
+		<text>Рация</text>
+	</string>
+	
+	<string id="itm_radio">
+		<text>Персональная радиостанция</text>
+	</string>
+	
+	<string id="itm_radio_descr">
+		<text>Армейская персональная радиостанция. Достаточно мощная для ведения радио эфира на большие расстояния.</text>
+	</string>
+	
+	<string id="quest_esc_radio">
+		<text>Связь с базой</text>
+	</string>
+	
+	<string id="quest_esc_radio_descr">
+		<text>Связаться с базой с помощью рации</text>
+	</string>
+	
+	<string id="quest_gen">
+		<text>Найти Кэпа</text>
+	</string>
+	
+	<string id="quest_gen_descr">
+		<text>Найти своего командира, позывной "Кэп"</text>
+	</string>
+	
+	
+</string_table>

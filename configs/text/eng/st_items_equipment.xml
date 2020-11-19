@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<!--***************************-->
+	<string id="st_binocular_name">
+		<text>Binoculars</text>
+	</string>
+	<string id="st_binocular_descr">
+		<text>Standard issue military binoculars with a maximum of x7.5 magnification. Useful in the Zone in that they allow its owner to observe things from a distance.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_detector1">
+		<text>detector "Echo"</text>
+	</string>
+	<string id="st_detector1_descr">
+		<text>This dated anomalous activity detector produces an alarm signal when anomalous particles enter a special chamber as you approach an anomaly. It can also register the presence of artifacts and measure the distance to the nearest one. The distance is indicated by the frequency of the sound the detector emits. To switch to artifact search mode, open the device's front cover. Due to its simple design, Echo can only be used to locate the most common artifacts.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_detector2">
+		<text>Detector "Bear"</text>
+	</string>
+	<string id="st_detector2_descr">
+		<text>This last generation anomalous activity detector can be used to locate anomalous formations and has a color diode panel, which not only indicates the direction of artifacts, but also measures the distance to them. To switch to artifact search mode, open the device's front cover. Unfortunately, the device is programmed with a somewhat outdated list of detectable artifacts.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_detector3">
+		<text>detector "Veles"</text>
+	</string>
+	<string id="st_detector3_descr">
+		<text>A next generation scientific detection scanner. Thanks to three modernized detection chambers, the position of artifacts is shown on a special display screen. When closed, the device registers only radiation and anomalies. To switch to artifact search mode, open the front LED display. When in search mode, the detector is capable of locating all artifacts known to science.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_detector4">
+		<text>"Svarog" detector prototype</text>
+	</string>
+	<string id="st_detector4_descr">
+		<text>A prototype of an expanded functionality anomalous frequency scanner. This device comes with a program used to identify static areas of anomalous activity stored in its database, while retaining the ability to locate artifacts. The position of anomalous areas and artifacts is displayed on a special screen. The artifact search mode, which can be activated by opening the front LED display, has been modified to detect anomalous formations currently unknown to science.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_dosimeter">
+		<text>Radiometer "Pripyat"</text>
+	</string>
+	<string id="st_dosimeter_descr">
+		<text>Radiometer "Pripyat" RKS-20.03 is an electronic measuring device manufactured in the USSR. It is intended for individual and collective use when measuring the equivalent dose rate of background ionizing radiation, beta-flux density, specific activity in liquid and bulk materials. Developed in 1980-1990-ies at the Kiev plant them. Queen. Best for its time and the most popular household radiometer, since the 1990's of the last century and up to date inclusive. There was every employee of the Chernobyl nuclear power plant. Judging by the messed up look, it's still a disaster. Measures the radiation power in microR /h. The maximum threshold is 5000 microR /h. This level of radiation is considered fatal to a person without protection. The Gamma-ray measurement option does not seem to work.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_device_torch_name">
+		<text>Flashlight</text>
+	</string>
+	<string id="st_device_torch_descr">
+		<text>A standard head-mounted flashlight. Useful for stalkers who find themselves out and about after dark, but may attract trouble if used unwisely.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_guitar_name">
+		<text>Guitar</text>
+	</string>
+	<string id="st_guitar_descr">
+		<text>A trusty guitar.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_pda_name">
+		<text>PDA</text>
+	</string>
+	<string id="st_pda_descr">
+		<text>No data stored.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_bolt">
+		<text>Bolt</text>
+	</string>
+	<!--***************************-->
+	<string id="st_harmonica_name">
+		<text>Harmonica</text>
+	</string>
+	<string id="st_harmonica_descr">
+		<text>For blues and prison romance lovers.</text>
+	</string>
+	<!--***************************-->
+	<!--DDDD...RRRRR..UU..UU..GGGGGG...SSSS.-->
+	<!--DD.DD..RR.RR..UU..UU..GG......SS....-->
+	<!--DD.DD..RRRR...UU..UU..GG.GGG...SSS..-->
+	<!--DD.DD..RR.RR..UU..UU..GG..GG.....SS.-->
+	<!--DDDD...RR..RR..UUUU...GGGGGG..SSSSS.-->
+	<!--***************************-->
+	<string id="st_bandage">
+		<text>Bandage</text>
+	</string>
+	<string id="st_bandage_descr">
+		<text>A normal elastic bandage used to stop regular bleeding, prevent infection of wounds. Can't cope with arterial bleeding properly (as wound dressings).</text>
+	</string>
+	<!--***************************-->
+	<string id="st_ipp_av3">
+		<text>Wound dressing «PPI-AV-3»</text>
+	</string>
+	<string id="st_ipp_av3_descr">
+		<text>PPI-AV-3 is a Russian official personal dressing for gunshot wounds and MBI (mine-blast injuries), accompanied by heavy bleeding, where a regular bandage is simply not suitable.\n It is an elastic mesh bandage 3.5 meters long with two sorption pads 140x230mm in size. Pillows have three layers: outer non-woven material with special impregnation; the inner absorbent layer, and the layer adjacent to the wound from a special non-adherent mesh, which allows the use of dressing on burned and scalped wounds.\n The elastic bandage provides additional compression on the wound, helping to stop bleeding as soon as possible. It has Velcro on the end for quick fixation.\n The outer packaging of the wrapping package has waterproof and wear-resistant properties. When removed, the inner side of packaging can be used as an occlusal lining for pneumothorax.\n It is the most affordable and popular wound dressing in many flash points of the CIS, as well as in the Zone. The shelf life of the package is 5 years.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_fcp">
+		<text>Israel bandage «FCP 09»</text>
+	</string>
+	<string id="st_fcp_descr">
+		<text>Once in 1993, an Israeli army conscript Bernard Ber-Nathon, seeing the torment of soldiers while trying to stop the bleeding with outdated means and ridiculous attempts to create pressure on the wound with stones, handles of pistols and rifle magazines, decided to put an end to this drama-charade. This is how the Israeli compression abdominal dressing manufactured by First Care Products came into being.\n Today, the bandage is the most technologically advanced, high-quality, convenient and popular army dressing device, exposed in flash points around the world, plus it has been put in service with the Israeli, USA and NATO countries nowadays.\n The device itself is a hybrid of bandage, wound dressing, medical tourniquet for pulling a limb and a tight pressure bandage. It is designed to stop heavy bleeding on wide surfaces - for example, chest, abdominal cavity or back. A tight fit to the body allows to use the device in the most "difficult" areas, for example, sloping and curved, like the neck, groin, buttocks, armpits, etc.\n Air is completely pumped out of both packaging layers, which allows to push the expiration date to unimaginable limits. Unlike other similar means, this bandage can be used with one hand.\n The only drawback of it is a quite high price.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_medkit">
+		<text>First Aid Kit</text>
+	</string>
+	<string id="st_medkit_descr">
+		<text>Universal travel first aid kit. It allows to cope with injuries: wounds, soft tissue bruises, thermal and chemical burns, various kinds of poisoning. Enjoys continued popularity among stalkers.\n \n%c[0,0,140,0]Complete set: %c[0,244,164,96]styptic wipes, alcohol wipes, styptic tourniquet, bandages, antiseptic, bactericidal patch, BF-6 glue.\n \n%c[0,0,140,0]Composition of medications: %c[0,55,215,215]pain medication - Spasgan, gastric - Activated carbon, vasodilator - Nitrosorbide, antibacterial - Doxycycline, antimicrobial - Phthalazolum, sedative - Valerian extract, antimicrobial - Ciprofloxacinum, antiallergic - Loratadin.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_ai_n2">
+		<text>AI-N-2 «Spetsnaz»</text>
+	</string>
+	<string id="st_ai_n2_descr">
+		<text>The AI-N-2 «Spetsnaz» first-aid kit of 30 items is intended for armed professionals participating in combat operations in isolation from the main forces or carrying out operational activities, personal security personnel, cash collection and courier services. It is delivered in a waterproof fabric bag painted in camouflage.\n \n%c[0,0,140,0]Complete set: %c[0,244,164,96]styptic wipes with feracryl, alcohol wipes, IPP AV-3, styptic tourniquet, bandages, antiseptic, bactericidal patch, scissors, medical gloves and mask, scalpel, BF-6 glue, Appolo gel, surgical thread with a needle, anti-shock set.\n \n%c[0,0,140,0]Composition of medications: %c[0,55,215,215]pain medication - Spasgan, antibiotic - Amoxiclav, gastric - Loperamidum, vasodilator - Nitrosorbide, antibacterial - Sulfacyl Sodium 20%, antimicrobial - Phthalosolum, sedative - Valerian Extract, antimicrobial - Ciprofloxacin, antiallergenic - Loratodine, stimulant - Caffeine, tablets for water purification - Aquatabs.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_kimgz">
+		<text>«KIMGZ»</text>
+	</string>
+	<string id="st_kimgz_descr">
+		<text>The KIMGZ is Russian first aid kit that consists in nuclear energy enterprises. The abbreviation KIMGZ means Individual Medical Civil Protection Kit from Russian. It is used for first aid for various injuries, as well as for radiation or biological contamination of the body. It is used in emergency situations to prevent or minimize the effect of the damaging factors of radiation, chemical and thermal nature on the human body. The KIMGZ first-aid kit is a heat-protective bag sewn in the form of a valve from four compartments.\n \n%c[0,0,140,0]Complete set: %c[0,244,164,96]PPI AV-3, styptic tourniquet, styptic wipes, disinfectant wipes, oral duct, IPP-11, injection syringe, rolled adhesive plaster, fainting agent.\n \n%c[0,0,140,0]Composition of medications: %c[0,55,215,215]analgesic - Buprenorphine, analgesic - Ketorolacum, radioprotective - Indralin B-190, Potassium Iodide, antiemetic - Latranum, antidote of iodine isotopes - Kaliedit, antidote of cesium radioisotopes - Ferrocin, antibacterial - Doxycycline.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_drug_booster">
+		<text>«Hercules»</text>
+	</string>
+	<string id="st_drug_booster_descr">
+		<text>The main component of this product is an anabolic androgen, an artificial steroid, the chemical composition of which resembles testosterone. Often used by stalkers during long raids to reduce muscle fatigue. Significantly increases weight-carrying capacity. The effects of the drug are long-lasting.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]artificial testosterone.\n \n%c[0,255,128,0]• moderate harm to health</text>
+	</string>
+	<!--***************************-->
+	<string id="st_drug_radioprotector">
+		<text>Radioprotector «Indraline-B190»</text>
+	</string>
+	<string id="st_drug_radioprotector_descr">
+		<text>«Indraline-B190» - an official radioprotector. It is a part of the first-aid kits of people working at nuclear power plants. Produced in pills form. Appeared in the Zone as a substitute for overly toxic Cystamine Hydrochloride (PC1). Reduces the effects of gamma radiation on living tissue. The B-190 preparation ensures the preservation of life of 9 out of 10 who received a lethal dose; today it is the most effective radioprotector in the world. This drug is preferably used prophylactically, before irradiation, since it does not have an instant effect. When using the drug, there can be a possible blood pressure increasing, reduce heart rate to 38 - 40 beats per minute, as well as atrioventricular dissociation and atrioventricular blockade. It has a long-lasting effect.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]B-190 (a group of biogenic amines).\n \n%c[0,255,0,0]• significant harm to health</text>
+	</string>
+	<!--***************************-->
+	<string id="st_antirad">
+		<text>Antirad «Mexamine»</text>
+	</string>
+	<string id="st_antirad_descr">
+		<text>Radioprotective drug Mexamine. Under experimental conditions, it reduces the mortality of animals exposed to x-ray or gamma radiation, as well as high-energy protons. When used, it causes narrowing of peripheral blood vessels and hypoxia (oxygen starvation), particularly in the bone marrow and spleen, which in this case is a means of preventing and treating radiation sickness. Widely distributed in the Zone.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]5-Methoxytryptamine.\n \n%c[0,255,128,0]• moderate harm to health</text>
+	</string>
+	<!--***************************-->
+	<string id="st_drug_antidot">
+		<text>Antidote «Acyzol»</text>
+	</string>
+	<string id="st_drug_antidot_descr">
+		<text>Remedy for intoxication with Poisoning Substances (PS). Helps accelerate the elimination of poisons from the body, reduces the severity of intoxication in case of poisoning. It is a part of number of first-aid kits. Located in a yellow-green pill case. It is taken 1 capsule 20-30 minutes before a possible infection.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]Zinc bisvinylimidazole diacetate.\n \n%c[0,255,0,0]• significant harm to health</text>
+	</string>
+	<!--***************************-->
+	<string id="st_ipp11">
+		<text>Anti-chemical package «IPP-11»</text>
+	</string>
+	<string id="st_ipp11_descr">
+		<text>Individual anti-chemical package - IPP-11, adopted in place of IPP-10. A remedy of neutralizing toxic and irritating substances (softens irritations) on human skin and on personal protective equipment, including for an emergency neutralization on affected skin. When applied in advance on skin, it protects against toxic substances from 6 to 24 hours.\n Inside there is a swab made of non-woven material 100x65mm in size, impregnated with a lanthanum-containing compound “langlik”, which has a well-absorbing and binding effect. The product has a protective, analgesic, anti-inflammatory and antibacterial effect, which contributes to the healing of thermal and chemical burns of the skin, ulcers, small cuts, and purulent wounds. The package liquid also has a disinfecting effect. \n The shelf life of the package is 5 years.\n \n%c[0,0,140,0]Instructions: %c[0,170,170,170]Open the package by the notch. Take the swab and evenly treat the face, neck and hands with it.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]Lanthanum nitrate, Triethylene Glycol, Ethyl carbitol, Sodium hydroxide, Water.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_drug_coagulant">
+		<text>«Vicasol»</text>
+	</string>
+	<string id="st_drug_coagulant_descr">
+		<text>«Vicasol» is a synthetic analogue of vitamin K. The main effect is to increase blood coagulation. It is prescribed for bleeding and against hypoprothrombinemia, acute hepatitis, capillary and parenchymal bleeding, after surgical interventions and injuries, bleeding with peptic ulcer of the stomach and duodenum, severe symptoms of acute radiation sickness, prolonged nose and hemorrhoidal bleeding. It is in demand among stalkers, as it allows the body to heal lacerated wounds faster. It has a long lasting effect.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]Menadione.</text>
+	</string>
+	<!--***************************-->
+	<string id="st_drug_psy_blockade">
+		<text>Psy-blockade</text>
+	</string>
+	<string id="st_drug_psy_blockade_descr">
+		<text>Narcotic drug blocking avalanche-like nerve impulses. It was created by scientists of the Kiev Research Institute of Chernobyl Radiation-Ecological Biosphere Reserve. An interesting side effect: after taking the drug, there is a short-term disappearance of any emotions. In the Zone it is used to counteract abnormal fields of increased psy activity. It has a long lasting effect.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]unknown.\n \n%c[0,255,0,0]• significant harm to health</text>
+	</string>
+	<!--***************************-->
+	<string id="st_drug_anabiotic">
+		<text>Anabiotics</text>
+	</string>
+	<string id="st_drug_anabiotic_descr">
+		<text>An experimental drug developed by scientists of the Kiev Research Institute of Chernobyl Radiation-Ecological Biosphere Reserve specifically for research groups operating in the Zone. Tetradotoxin, known as "zombie powder", which is part of the drug’s formula, causes complete paralysis of the central nervous system; supposedly, this may provide survival outside a shelter during an emission. The drug was not tested in the field and did not pass clinical trials, which casts doubt on its effectiveness and can provide pensive mood about possible side effects.\n \n%c[0,0,140,0]Active substances: %c[0,55,215,215]Tetradotoxin.\n \n%c[0,255,0,0]• significant harm to health</text>
+	</string>
+	<!--***************************-->
+	<!--FFFFF..OOOOO..OOOOO..DDDD..-->
+	<!--FF.....OO.OO..OO.OO..DD.DD.-->
+	<!--FFFF...OO.OO..OO.OO..DD.DD.-->
+	<!--FF.....OO.OO..OO.OO..DD.DD.-->
+	<!--FF.....OOOOO..OOOOO..DDDD..-->
+	<!--***************************-->
+	<string id="st_bread">
+		<text>Bread</text>
+	</string>
+	<string id="st_bread_descr">
+		<text>An ordinary loaf brought from the Big Land through smuggling, corruption and bribery for profitable resale in the Zone. However, this is already the traders’ business, none of ordinary local tramps.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]476 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]16 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]2 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]98.2 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]6.6 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_kolbasa">
+		<text>Sausage</text>
+	</string>
+	<string id="st_kolbasa_descr">
+		<text>A mix of chicken and a soy substitute. Can be stored for a long time due to high preservative content therefore common in the Zone.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]996 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]34 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]95.4 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]0.8 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_cheese">
+		<text>Cheese</text>
+	</string>
+	<string id="st_cheese_descr">
+		<text>Hard cheese. A good substitute for sausage, brought to slightly diversify the stalker diet. Usually it is dragged by newcomers from the Big Land.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]826 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]59.6 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]64.7 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]0.7 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_conserva">
+		<text>Canned beef stew</text>
+	</string>
+	<string id="st_conserva_descr">
+		<text>The usual cheap canned beef stew. They are popular among simple stalkers due to their cheapness and almost faultlessly long shelf life.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]764 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]69.6 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]53.6 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]0.8 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0.4 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_hotcan_military">
+		<text>Army «Hotcan»</text>
+	</string>
+	<string id="st_hotcan_military_descr">
+		<text>Army version of self-heating bicameral canned food made by Australian company «Hotcan». There is food in the inner compartment of the can, and calcium hydroxide in the outer compartment, which, when interacting with air, as a result of an exothermic reaction, heats the food. To get a portion of hot beans with bangers, it is enough to open the can, wait 8-12 minutes, and the food begins to emit steam without any visible heat source. The product is designed primarily for military personnel who are in extreme conditions. In the Zone it is used by a military landing, sometimes found among veterans.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]447 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]20.7 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]23.6 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]45.6 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]1.6 (g) \n \n%c[0,255,200,0]• hot food</text>
+	</string>
+	<!--***************************-->
+	<string id="st_hotcan_standard">
+		<text>«Hotcan»</text>
+	</string>
+	<string id="st_hotcan_standard_descr">
+		<text>Self-heating bicameral canned food made by Australian company «Hotcan». There is food in the inner compartment of the can, and calcium hydroxide in the outer compartment, which, when interacting with air, as a result of an exothermic reaction, heats the food. To get a portion of hot beans with bangers, it is enough to open the can, wait 8-12 minutes, and the food begins to emit steam without any visible heat source. The product is designed primarily for people working or vacationing in extreme conditions - rescuers, climbers, the police, the army, fishermen and campers. In the Zone, it is found among scientists and veterans.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]447 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]20.7 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]23.6 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]45.6 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]1.6 (g) \n \n%c[0,255,200,0]• hot food</text>
+	</string>
+	<!--***************************-->
+	<string id="st_condensed_milk">
+		<text>Condensed milk</text>
+	</string>
+	<string id="st_condensed_milk_descr">
+		<text>In 1858, the world's first plant for the production of condensed milk was opened in the United States, and with the outbreak of the Civil War, the product began to be produced in large quantities to supply them with soldiers of the North. The first plant for the production of condensed milk in Russia appeared in Orenburg in 1881. In times of food shortages in the 1980s, in the USSR, condensed milk was included in holiday food packages distributed by coupons. According to the lists from storehouses, it was received by young tourists going on field trips to the scientific and industrial expeditions. Sometimes it can be found among stalkers.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]1274.4 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]31.4 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]34.5 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]216 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_hooah">
+		<text>«HooAH»</text>
+	</string>
+	<string id="st_hooah_descr">
+		<text>The «HooAH» protein bar was developed by chemists and biologists in the US military with the involvement of research organizations. It was created in 1996 as part of the so-called “first strike ration”, designed to ensure the high physical and mental performance of soldiers during special operations. The bar contains only natural products with a masterfully selected mass ratio of carbonhydrates, peptides, special proteins from whey and maltodextrin for a total "amount" of 280 calories (plus 17 vitamins and minerals). In the Zone, such bars are found among the elite military and scientists.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]280 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]11 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]9 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]44 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]2 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_snickers">
+		<text>«Snickers»</text>
+	</string>
+	<string id="st_snickers_descr">
+		<text>«Snickers» bar was first made in 1923 in the United States by pastry chef Frank Mars. Mass production only began in 1930. In November 1929, a chocolate factory was built in Chicago where Snickers chocolate bars were made first in line. Today, the Chicago Chocolate Factory produces 560 sweets per minute on a separate production line. The name of the bar was chosen by the name of the beloved horse of the Mars family, the founders of Mars Incorporated. It began to be delivered to Russia in 1992.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]245.5 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]3.8 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]11.9 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]29.6 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]1.2 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_mre">
+		<text>«MRE»</text>
+	</string>
+	<string id="st_mre_descr">
+		<text>The Meal, Ready-to-Eat – commonly known as the MRE – is a self-contained, individual field ration in lightweight packaging bought by the United States Department of Defense for its service members for use in combat or other field conditions where organized food facilities are not available. While MREs should be kept cool, they do not need to be refrigerated. MREs replaced the canned MCI, or Meal, Combat, Individual rations, in 1981, and is the intended successor to the lighter LRP ration developed by the United States Army for Special Forces and Ranger patrol units in Vietnam. MREs have also been distributed to USA civilians during natural disasters. MREs arrive to the Zone from black market. \n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]1300 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]14 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]34 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]52 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]9.2 (g) \n \n%c[0,255,200,0]• hot food</text>
+	</string>
+	<!--***************************-->
+	<string id="st_irp_ukr">
+		<text>«DPNP-P»</text>
+	</string>
+	<string id="st_irp_ukr_descr">
+		<text>“DPNP-P” is the latest version of the Ukrainian meal ready to eat, developed by volunteers with products for almost two and a half kilograms. Drawbacks of past MREs were excluded, a flameless heater was added. Taken into service in Ukrainian army at the moment.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]5340 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]162 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]290 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]580 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]60 (g) \n \n%c[0,255,200,0]• hot food</text>
+	</string>
+	<!--***************************-->
+	<string id="st_irp_ukr_old">
+		<text>«ZNSP»</text>
+	</string>
+	<string id="st_irp_ukr_old_descr">
+		<text>«ZNSP» is a meal ready to eat for Ukrainian army. Was left out of the service. \n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]3360 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]98 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]120 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]345 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]30 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_irp_b">
+		<text>«IRP-B»</text>
+	</string>
+	<string id="st_irp_b_descr">
+		<text>The «IRP-B» military ration is intended for organizing meals in the combat situation of individual military personnel and personnel of small units when it is impossible or inexpedient to organize meals from military stationary or field kitchens, civilian catering enterprises, or for payment from private individuals according to the tasks they perform. One package of IRP-B is designed to «power up» one soldier for one day. Has a set of food heating.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]3360 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]98 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]120 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]345 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]30 (g)  \n \n%c[0,255,200,0]• hot food</text>
+	</string>
+	<!--***************************-->
+	<!--DDDD...RRRRR..II..NN...NN..KK..KK..SSSS.-->
+	<!--DD.DD..RR.RR..II..NNN..NN..KK.KK..SS....-->
+	<!--DD.DD..RRRR...II..NN.N.NN..KKKK....SSS..-->
+	<!--DD.DD..RR.RR..II..NN..NNN..KK.KK.....SS.-->
+	<!--DDDD...RR..RR.II..NN...NN..KK..KK.SSSSS.-->
+	<!--***************************-->
+	<string id="st_water">
+		<text>Water</text>
+	</string>
+	<string id="st_water_descr">
+		<text>One of the first necessities in the Exclusion Zone is undoubtedly water. It is in constant demand. Imported by corrupt military.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]0 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0 (g)</text>
+	</string>
+	<!--***************************-->
+	<string id="st_energy_drink">
+		<text>«Nonstop»</text>
+	</string>
+	<string id="st_energy_drink_descr">
+		<text>Often used by stalkers on long trips when no breaks can be afforded. The drink contains easily digestible carbohydrates, as well as drugs that stimulate the release of adrenaline into the bloodstream.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]210 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]50 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0 (g) \n \n%c[0,255,128,0]• moderate harm to health</text>
+	</string>
+	<!--***************************-->
+	<string id="st_cocacola">
+		<text>«Cocacola»</text>
+	</string>
+	<string id="st_cocacola_descr">
+		<text>A soda that adds energy for a short time. It is in great demand among spring chickens, what is being skillfully used by some traders.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]105 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]26 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0 (g) \n \n%c[0,255,128,0]• moderate harm to health</text>
+	</string>
+	<!--***************************-->
+	<string id="st_vodka">
+		<text>Vodka</text>
+	</string>
+	<string id="st_vodka_descr">
+		<text>Wicked and wild vodka. When it enters the body, the capillaries of the brain become clogged with erythrocytes deformed due to ethanol, causing oxygen starvation of tissues, as well as dehydration, which causes a feeling of euphoria and a decrease in stress. At the same time, the frontal lobes responsible for logical thinking are suppressed by alcohol, making the brain less vulnerable to targeted psy-effects. Stalkers are most often use it to relax and relieve stress in bars, since only a few people want to find themselves with a clouded mind directly in the face of danger. It should be noted that alcohol has a negative effect on all human organs, causing the biggest damage to the brain. It is recommended not to abuse.\n \n%c[0,0,140,0]Kcal.: %c[0,55,215,215]1645 (kcal) \n%c[0,0,140,0]Proteins: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Fats: %c[0,244,164,96]0 (g) \n%c[0,0,140,0]Carbs: %c[0,244,164,96]2.8 (g) \n%c[0,0,140,0]Fibers: %c[0,255,0,255]0 (g) \n \n%c[0,255,0,0]• significant harm to health</text>
+	</string>
+</string_table>

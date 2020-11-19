@@ -1,0 +1,18 @@
+function start_find_art()
+	local id = get_story_object_id('esc_fabrika_inv_box')
+	id = alife():create("fabric_art", vector(), 0, 0, id).id
+	
+	db.actor:give_info_portion("esc_find_art_start")
+	add_story_object(id, "fabric_art")
+end
+
+local levelName
+function target_svistun()
+	levelName = levelName or level.name()
+	return levelName == 'esc_tunnel' and not has_alife_info('tunnel_rast_task2_report')
+end
+
+function spw_esc_svistun() log1('! spw_esc_svistun:spw')
+	--alife():create('esc_svistun', vector():set(-186.123566, -46.403450, -74.364845), 963, 18)
+	alife():create('esc_svistun', vector():set(-185.900269, -46.435852, -74.512413), 789, 20)
+end

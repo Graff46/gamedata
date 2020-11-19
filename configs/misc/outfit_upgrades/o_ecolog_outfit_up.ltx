@@ -1,0 +1,28 @@
+[up_sect_secona_ecolog_outfit]
+cost 		= 3500
+value		= +3
+
+nightvision_sect 				= effector_nightvision_3
+
+[up_secona_ecolog_outfit]
+scheme_index            = 2, 1
+known                   = 1
+effects                 =
+section                 = up_sect_secone_helm_battle_dolg
+property                = prop_night_vision
+
+precondition_functor    = inventory_upgrades.precondition_functor_a
+precondition_parameter  = a & b
+
+effect_functor          = inventory_upgrades.effect_functor_a
+effect_parameter        = something_here
+
+prereq_functor          = inventory_upgrades.prereq_functor_a
+prereq_tooltip_functor  = inventory_upgrades.prereq_tooltip_functor_a
+prereq_params           =
+name                    = st_up_resp_c1_name
+description             = st_up_resp_c1_descr
+icon                    = ui_inGame2_upgrade_helm_battle_dolg_9
+
+[up_gr_secona_ecolog_outfit]
+elements                = up_secona_ecolog_outfit

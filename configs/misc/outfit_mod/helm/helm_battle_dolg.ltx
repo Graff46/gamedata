@@ -1,0 +1,53 @@
+;---------------------------------------------------------------------------------------------
+;		ькел "ятепю днкцЮ"
+;---------------------------------------------------------------------------------------------
+
+[helm_battle_dolg]:helmet
+$spawn 			= "outfit\helm_battle_dolg"
+visual          	= dynamics\outfit_mod\helm_battle_dolg
+control_inertion_factor	= 1.0
+inv_name             	= st_helm_battle_dolg
+inv_name_short       	= st_helm_battle_dolg
+description				= st_helm_battle_dolg_descr
+
+inv_weight           	= 3.0
+
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 20
+inv_grid_y           	= 11
+
+upgr_icon_x			= 900
+upgr_icon_y			= 450
+upgr_icon_width		= 100
+upgr_icon_height   	= 100
+
+cost			= 8000
+
+nightvision_sect	= effector_nightvision_2
+
+immunities_sect 	= sect_helm_battle_immunities
+bones_koeff_protection		= actor_helm_battle
+
+telepatic_protection 		= 0.0600
+radiation_protection 		= 0.0050
+chemical_burn_protection 	= 0.0300
+strike_protection 			= 0.0
+explosion_protection 		= 0.0
+wound_protection			= 0.0
+
+upgrades                = up_gr_firstab_helm_battle, up_gr_seconab_helm_battle
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_helm_battle
+
+[sect_helm_battle_dolg_immunities]
+burn_immunity			= 0.02
+strike_immunity			= 0.0
+shock_immunity			= 0.02
+wound_immunity			= 0.0
+wound_2_immunity		= 0.0
+radiation_immunity		= 0.0
+telepatic_immunity		= 0.0
+chemical_burn_immunity	= 0.02
+explosion_immunity		= 0.01
+fire_wound_immunity		= 0.01

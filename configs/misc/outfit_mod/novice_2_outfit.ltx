@@ -1,0 +1,85 @@
+;---------------------------------------------------------------------------------------------
+;		КОСТЮМ НОВИЧКА
+;---------------------------------------------------------------------------------------------
+[novice_2_outfit]:outfit_base
+GroupControlSection	= spawn_group
+discovery_dependency =
+$spawn 			= "outfit\novice_2_outfit"
+;$prefetch 		= 32
+class			= E_STLK
+cform           = skeleton
+visual          = dynamics\outfit_mod\novice_outfit
+actor_visual	= actors\stalker_hero\stalker_hero_1.ogf
+player_hud_section	= hud_stalker_n
+
+ef_equipment_type	= 3
+
+inv_name			= novice_2_outfit_name
+inv_name_short		= novice_2_outfit_name
+description			= novice_2_outfit_description
+inv_weight			= 3.0
+
+inv_grid_width		= 2
+inv_grid_height 	= 2
+inv_grid_x			= 22
+inv_grid_y			= 9
+
+upgr_icon_x			= 100
+upgr_icon_y			= 450
+upgr_icon_width		= 100
+upgr_icon_height   	= 100
+
+full_icon_name		= npc_icon_novice_outfit
+
+
+cost				= 800
+slot				= 6
+full_scale_icon		= 0,11		;иконка сталкера в костюме в полный рост
+
+immunities_sect			= sect_novice_outfit_immunities
+
+; LOW RESISTANCE
+burn_protection 				= 0.005
+shock_protection 				= 0.005
+radiation_protection 			= 0.005
+chemical_burn_protection 		= 0.005
+telepatic_protection 			= 0.0
+strike_protection 				= 0.15
+explosion_protection 			= 0.15
+wound_protection				= 0.15
+fire_wound_protection  			= 0.1
+physic_strike_wound_immunity 	= 0.1
+
+hit_fraction_actor				= 0.5
+bones_koeff_protection 			= actor_armor_light
+
+control_inertion_factor = 1.2
+power_loss 			= 0.7
+
+artefact_count          = 1
+
+upgrades                = up_gr_firstab_novice_outfit, up_gr_seconab_novice_outfit, up_gr_thirdab_novice_outfit
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_novice_outfit
+
+[sect_novice_2_outfitt_immunities]
+burn_immunity				= 0.03			;коэффициенты иммунитета самого костюма
+strike_immunity				= 0.0
+shock_immunity				= 0.0
+wound_immunity				= 0.03
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.03
+explosion_immunity			= 0.03
+fire_wound_immunity			= 0.015
+
+[sect_novice_2_outfit_immunities_add]
+burn_immunity				= 0.03			;коэффициенты иммунитета самого костюма
+strike_immunity				= 0.0
+shock_immunity				= 0.0
+wound_immunity				= 0.03
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.03
+explosion_immunity			= 0.03
+fire_wound_immunity			= 0.015

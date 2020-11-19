@@ -1,0 +1,85 @@
+;---------------------------------------------------------------------------------------------
+;		Плащ снайпера
+;---------------------------------------------------------------------------------------------
+[stalker_neutral_sna]:stalker_outfit
+GroupControlSection	= spawn_group
+discovery_dependency =
+$spawn 			= "outfit_mod\stalker_neutral_sna"
+;$prefetch 		= 32
+class			= E_STLK
+cform           = skeleton
+visual          		= dynamics\outfit_mod\stalker_neutral_sna
+actor_visual		= actors\stalker_neutral\stalker_neutral_sna.ogf
+player_hud_section	= hud_act_ans_s
+
+ef_equipment_type	= 3
+
+inv_name			= stalker_neutral_sna_name
+inv_name_short		= stalker_neutral_sna_name
+description			= stalker_neutral_sna_description
+inv_weight			= 3.0
+
+inv_grid_width     = 2
+inv_grid_height    = 3
+inv_grid_x         = 36
+inv_grid_y         = 0
+
+
+upgr_icon_x			= 1000
+upgr_icon_y			= 300
+upgr_icon_width		= 100
+upgr_icon_height   	= 150
+full_icon_name		= npc_icon_stalker_neutral_sna
+
+cost				= 4000
+slot				= 6
+full_scale_icon		= 14,11			;иконка сталкера в костюме в полный рост
+		
+
+default_to_ruck     = false
+immunities_sect		= sect_stalker_neutral_sna_immunities
+
+
+; LOW RESISTANCE
+burn_protection 				= 0.0650
+shock_protection 				= 0.200
+radiation_protection 			= 0.0030
+chemical_burn_protection 		= 0.0325
+telepatic_protection 			= 0.0
+strike_protection 				= 0.15
+explosion_protection 			= 0.2
+wound_protection				= 0.15
+
+hit_fraction_actor				= 0.75
+bones_koeff_protection 			= actor_armor_light
+
+control_inertion_factor = 1.2
+power_loss 			= 0.7
+
+artefact_count          = 2
+
+upgrades                = up_gr_firstab_novice_outfit, up_gr_seconab_novice_outfit, up_gr_thirdab_novice_outfit
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_novice_outfit
+
+[sect_stalker_neutral_sna_immunities]
+burn_immunity				= 0.03			;коэффициенты иммунитета самого костюма
+strike_immunity				= 0.0
+shock_immunity				= 0.0
+wound_immunity				= 0.03
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.03
+explosion_immunity			= 0.03
+fire_wound_immunity			= 0.015
+
+[sect_stalker_neutral_sna_immunities_add]
+burn_immunity				= 0.015			;коэффициенты иммунитета самого костюма
+strike_immunity				= 0.0
+shock_immunity				= 0.0
+wound_immunity				= 0.015
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.015
+explosion_immunity			= 0.015
+fire_wound_immunity			= 0.010

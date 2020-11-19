@@ -1,0 +1,65 @@
+[sim_faction]
+GroupControlSection	= 
+$spawn 			= "ai\DO_NOT_USE"
+class			= SCRIPTZN
+;script_binding	= bind_faction.bind
+
+shape_transp_color		= 0, 0, 255, 60 ;0x1800FF00
+shape_edge_color		= 32, 32, 32, 255 ;0xFF202020
+
+
+[smart_terrain]
+GroupControlSection	= 
+$spawn 			= "ai\smart_terrain"
+;$prefetch 		= 4
+$def_sphere		= 2
+class			= SMRTTRRN
+script_binding	= bind_smart_terrain.bind
+
+shape_transp_color		= 100, 100, 180, 60 ;0x1800FF00
+shape_edge_color		= 32, 32, 32, 255 ;0xFF202020
+
+
+[smart_terrain_stay_time]
+quick   = 2,  5
+medium  = 6,  8
+long    = 12, 14
+default = 10000, 10001
+
+
+
+;В simulation.ltx создаете поле [start_position_<имя уровня>]
+;В нем пишите строку <ид сквада> = <имя смарта>
+
+
+[start_position_escape]
+;esc_village_squad = esc_village
+;esc_sim_default_stalker = esc_village
+;esc_south_bandits_squad = esc_south_bandit
+;esc_fabric_squad = esc_fabric
+;esc_crash_most_squad = esc_crash_most
+;esc_crash_most_mutants_squad = esc_smart_mutants1
+;esc_smart_mutants3_squad = esc_smart_mutants3
+;esc_smart_mutants3_squad_2 = esc_smart_mutants3
+;esc_smart_mutants4_squad = esc_smart_mutants4
+;esc_smart_mutants5_squad = esc_smart_mutants5
+;esc_smart_mutants6_squad = esc_smart_mutants6
+;esc_smart_mutants7_squad = esc_smart_mutants7
+;esc_smart_mutants7_squad_2 = esc_smart_mutants7
+;esc_smart_mutants8_squad = esc_smart_mutants8
+;esc_smart_mutants9_squad = esc_smart_mutants9
+;esc_smart_mutants9_squad_2 = esc_smart_mutants9
+
+[start_position_garbage]
+;gar_svalka_squad = gar_svalka
+;gar_smart_mutants1_squad = gar_smart_mutants1
+;gar_smart_mutants2_squad = gar_smart_mutants2
+;gar_smart_mutants2_squad_2 = gar_smart_mutants2
+;gar_smart_mutants3_squad = gar_smart_mutants3
+;gar_smart_mutants4_squad = gar_smart_mutants4
+;gar_smart_mutants5_squad = gar_smart_mutants5
+;gar_smart_mutants5_squad_2 = gar_smart_mutants5
+;gar_smart_mutants6_squad = gar_smart_mutants6
+;gar_smart_mutants7_squad = gar_smart_mutants7
+;gar_smart_mutants8_squad = gar_smart_mutants8
+;gar_smart_mutants9_squad = gar_smart_mutants9

@@ -1,0 +1,83 @@
+;---------------------------------------------------------------------------------------------
+;		“ﬂ∆≈À€…  Œ—“ﬁÃ ÃŒÕŒÀ»“¿
+;---------------------------------------------------------------------------------------------
+[monolith_heavy_outfit]:outfit_base
+GroupControlSection		= spawn_group
+discovery_dependency 		=
+$spawn 				= "outfit_mod\monolith_heavy_outfit"
+;$prefetch 			= 32
+class				= E_STLK
+cform           			= skeleton
+ef_equipment_type			= 3
+
+visual				= dynamics\outfit_mod\monolith_assault_outfit
+actor_visual			= actors\stalker_monolith\stalker_monolith_3.ogf
+player_hud_section			= hud_monolit_h
+
+inv_name				= monolit_heavy_outfit_name
+inv_name_short			= monolit_heavy_outfit_name
+description			= monolit_heavy_outfit_description
+
+inv_weight			= 12.0
+
+inv_grid_width			= 2
+inv_grid_height			= 3
+inv_grid_x			= 32
+inv_grid_y			= 6
+
+upgr_icon_x			= 800
+upgr_icon_y			= 300
+upgr_icon_width		= 100
+upgr_icon_height   	= 150
+
+full_icon_name			= npc_icon_monolith_heavy_outfit
+
+cost				= 24000
+slot				= 6
+full_scale_icon			= 2,6
+
+immunities_sect			= sect_monolith_heavy_outfit_immunities
+
+; MEDIUM RESISTANCE
+burn_protection                     = 0.0900
+shock_protection                     = 0.400
+radiation_protection                = 0.0150
+chemical_burn_protection           = 0.0900
+telepatic_protection                = 0.0600
+strike_protection                     = 0.45
+explosion_protection                = 0.45
+wound_protection                    = 0.45
+
+hit_fraction_actor                    = 0.25
+bones_koeff_protection               = actor_armor_exo
+
+helmet_avaliable			 	= false
+power_loss						= 1.0
+artefact_count                  = 0
+control_inertion_factor			= 2.5
+
+upgrades                = up_gr_firstab_military_outfit, up_gr_seconab_military_outfit, up_gr_thirdab_military_outfit, up_gr_fourtab_military_outfit
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_military_outfit
+
+[sect_monolith_heavy_outfit_immunities]
+burn_immunity			= 0.045
+strike_immunity			= 0.045
+shock_immunity			= 0.0
+wound_immunity			= 0.045
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.05
+explosion_immunity		= 0.05
+fire_wound_immunity		= 0.01
+
+[sect_monolith_heavy_outfit_immunities_add]
+burn_immunity			= 0.035
+strike_immunity			= 0.0
+shock_immunity			= 0.035
+wound_immunity			= 0.035
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.035
+explosion_immunity		= 0.035
+fire_wound_immunity		= 0.008

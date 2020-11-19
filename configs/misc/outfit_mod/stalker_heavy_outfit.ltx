@@ -1,0 +1,86 @@
+;---------------------------------------------------------------------------------------------
+;		“ﬂ∆≈À€…  Œ—“ﬁÃ Õ≈…“–¿À¿
+;---------------------------------------------------------------------------------------------
+[stalker_heavy_outfit]:outfit_base
+GroupControlSection		= spawn_group
+discovery_dependency 		=
+$spawn 				= "outfit\stalker_heavy_outfit"
+;$prefetch 			= 32
+class				= E_STLK
+cform           			= skeleton
+ef_equipment_type			= 3
+
+visual				= dynamics\outfit_mod\stalker_assault_outfit
+
+actor_visual			= actors\stalker_neutral\stalker_neutral_3.ogf
+player_hud_section	= hud_stalker_h
+
+inv_name				= stalker_heavy_outfit_name
+inv_name_short			= stalker_heavy_outfit_name
+description			= stalker_heavy_outfit_description
+
+inv_weight			= 12.0
+
+inv_grid_width			= 2
+inv_grid_height			= 3
+inv_grid_x			= 22
+inv_grid_y			= 3
+
+upgr_icon_x			= 100
+upgr_icon_y			= 150
+upgr_icon_width		= 100
+upgr_icon_height   	= 150
+
+full_icon_name			= npc_icon_stalker_heavy_outfit
+
+cost				= 15000
+slot				= 6
+full_scale_icon			= 2,6
+
+immunities_sect			= sect_stalker_heavy_outfit_immunities
+
+; MEDIUM RESISTANCE
+burn_protection 				= 0.0750
+shock_protection 				= 0.300
+radiation_protection 			= 0.0040
+chemical_burn_protection 		= 0.0750
+telepatic_protection 			= 0.050
+strike_protection 				= 0.4
+explosion_protection 			= 0.45
+wound_protection				= 0.4
+
+hit_fraction_actor				= 0.25
+bones_koeff_protection			= actor_armor_exo
+
+helmet_avaliable			 	= false
+power_loss						= 1.0
+artefact_count                  = 1
+control_inertion_factor			= 2.5
+
+artefact_count			= 3
+
+upgrades                = up_gr_firstab_military_outfit, up_gr_seconab_military_outfit, up_gr_thirdab_military_outfit, up_gr_fourtab_military_outfit
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_military_outfit
+
+[sect_stalker_heavy_outfit_immunities]
+burn_immunity			= 0.05
+strike_immunity			= 0.05
+shock_immunity			= 0.0
+wound_immunity			= 0.05
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.05
+explosion_immunity		= 0.05
+fire_wound_immunity		= 0.01
+
+[sect_stalker_heavy_outfit_immunities_add]
+burn_immunity			= 0.04
+strike_immunity			= 0.0
+shock_immunity			= 0.04
+wound_immunity			= 0.04
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.04
+explosion_immunity		= 0.04
+fire_wound_immunity		= 0.008

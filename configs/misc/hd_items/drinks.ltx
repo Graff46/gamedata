@@ -1,0 +1,187 @@
+[drink]:identity_immunities
+GroupControlSection	= spawn_group
+discovery_dependency =
+;$spawn 				= "food and drugs\drink"
+$prefetch 			= 8
+class				= S_FOOD
+cform				= skeleton
+visual				= dynamics\items\drinks\water.ogf ;dynamics\devices\dev_aptechka\dev_aptechka_low.ogf
+description			= default
+inv_name			= default
+inv_name_short		= default
+inv_weight			= 0.01
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 3
+inv_grid_y			= 18
+cost				= 1
+
+; eatable item
+eat_health			= 0
+eat_satiety			= 0
+eat_power			= 0
+eat_max_power		= 0
+eat_radiation		= 0
+eat_alcohol			= 0
+wounds_heal_perc	= 0
+eat_portions_num	= 1
+
+boost_time				= 0.0
+boost_max_weight		= 0.0
+boost_health_restore	= 0.0
+boost_power_restore		= 0.0
+boost_radiation_restore	= 0.0
+boost_bleeding_restore	= 0.0
+
+boost_radiation_protection	= 0.0
+boost_telepat_protection 	= 0.0
+boost_chemburn_protection 	= 0.0
+
+boost_burn_immunity			= 0.0
+boost_shock_immunity		= 0.0
+boost_radiation_immunity	= 0.0
+boost_telepat_immunity		= 0.0
+boost_chemburn_immunity 	= 0.0
+boost_strike_immunity		= 0.0
+boost_wound_immunity		= 0.0
+boost_explosion_immunity	= 0.0
+boost_fire_wound_immunity	= 0.0
+
+use_sound			= interface\inv_softdrink
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	DRINKS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[vodka]:drink
+$spawn 				= "food and drugs\vodka"
+cform				= skeleton
+visual				= dynamics\items\drinks\vodka.ogf
+
+inv_name			= st_vodka
+inv_name_short		= st_vodka
+description			= st_vodka_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 2
+inv_grid_y         = 30
+
+inv_weight			= 0.700
+cost				= 850
+
+attach_angle_offset		= 0.000000, 0.000000, 0.000000
+attach_position_offset	= 0.087266, -0.078540, 0.052360
+attach_bone_name		= bip01_r_hand
+auto_attach				= false
+
+bone_name				= bip01_r_hand
+position_offset			 = 0.0,0.0,0.0
+angle_offset			 = 1.570790,1.570790,3.92699
+
+break_particles		= destroy_fx\destroy_bottle
+break_sound			= material\bottle\collide\bottle_break_1
+
+boost_time				= 60.0
+
+boost_telepat_protection	= 0.01
+
+eat_alcohol				= 0.3
+eat_health				= -0.1
+eat_satiety				= -0.2
+
+use_sound			= interface\inv_vodka
+
+[vodka_script]:vodka ; не использовать
+$spawn 				= "food and drugs\vodka_script"
+inv_weight			= 0
+
+[water]:vodka
+$spawn 				= "food and drugs\water"
+visual				= dynamics\items\drinks\water.ogf
+
+inv_name			= st_water
+inv_name_short		= st_water
+description			= st_water_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 0
+inv_grid_y         = 30
+
+inv_weight			= 0.500
+cost				= 240
+
+boost_time				= 60.0
+
+boost_telepat_protection	= 0.0
+boost_health_restore		= 0.0001
+
+boost_health_restore	= 0.001
+boost_power_restore		= 0.001
+
+eat_alcohol				= 0.0
+eat_health				= 0.0
+eat_satiety				= 0.0
+
+use_sound			= interface\inv_softdrink
+
+[energy_drink]:vodka
+$spawn 				= "food and drugs\energy_drink"
+visual				= dynamics\items\drinks\nonstop.ogf	;dynamics\devices\dev_drink_stalker\dev_drink_stalker
+
+inv_name			= st_energy_drink
+inv_name_short		= st_energy_drink
+description			= st_energy_drink_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 1
+inv_grid_y         = 30
+
+inv_weight			= 0.500
+cost				= 170
+
+attach_angle_offset		= 0.000000, 0.000000, 0.000000
+attach_position_offset	= 0.087266, -0.078540, 0.052360
+attach_bone_name		= bip01_r_hand
+auto_attach				= false
+
+boost_time				= 60.0
+
+boost_power_restore		= 0.005
+boost_telepat_protection	= 0.0
+
+eat_alcohol				= 0.0
+eat_health				= -0.03
+eat_satiety				= 0.0
+
+use_sound			= interface\inv_soda
+
+[cocacola]:vodka
+$spawn 				= "food and drugs\cola_drink"
+visual				= dynamics\items\drinks\cocacola.ogf
+
+inv_name			= st_cocacola
+inv_name_short		= st_cocacola
+description			= st_cocacola_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 3
+inv_grid_y         = 30
+
+inv_weight			= 0.250
+cost				= 150
+
+boost_time				= 30.0
+
+boost_power_restore		= 0.003
+
+boost_telepat_protection	= 0.0
+
+eat_alcohol				= 0.0
+eat_health				= -0.02
+eat_satiety				= 0.0
+
+use_sound			= interface\inv_soda

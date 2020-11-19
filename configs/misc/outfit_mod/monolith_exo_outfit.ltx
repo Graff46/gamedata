@@ -1,0 +1,78 @@
+;---------------------------------------------------------------------------------------------
+;		ЭКЗОСКЕЛЕТ МОНОЛИТА
+;---------------------------------------------------------------------------------------------
+
+[monolith_exo_outfit]:exo_outfit
+$spawn 			= "outfit\monolith_exo_outfit"
+inv_name			= monolit_exoskeleton_name
+inv_name_short		= monolit_exoskeleton_name
+description			= monolit_exoskeleton_description
+player_hud_section	= hud_monolit_exo
+
+inv_grid_width		= 2
+inv_grid_height		= 3
+inv_grid_x		= 28
+inv_grid_y		= 0
+
+upgr_icon_x			= 400
+upgr_icon_y			= 0
+upgr_icon_width		= 100
+upgr_icon_height   	= 150
+
+visual         		= dynamics\outfit_mod\monolith_exo_outfit
+actor_visual		= actors\stalker_monolith\stalker_monolith_4.ogf
+
+full_icon_name		= npc_icon_monolit_exo_outfit
+
+inv_weight			= 34.8
+
+cost				= 88000
+
+; MEDIUM RESISTANCE
+burn_protection 				= 0.0900
+shock_protection 				= 0.400
+radiation_protection 			= 0.0150
+chemical_burn_protection 		= 0.0900
+telepatic_protection 			= 0.0600
+strike_protection 				= 0.5
+explosion_protection 			= 0.5
+wound_protection				= 0.5
+
+hit_fraction_actor				= 0.25
+bones_koeff_protection			= actor_armor_exo
+
+;запрещение режима Sprint для Актера
+sprint_allowed					= false
+
+helmet_avaliable			 	= false
+power_loss						= 1.0
+additional_inventory_weight		= 90
+additional_inventory_weight2	= 90
+artefact_count                  = 0
+control_inertion_factor			= 2.5
+
+upgrades                = up_gr_firstab_exo_outfit, up_gr_seconab_exo_outfit, up_gr_thirdab_exo_outfit, up_gr_fourtab_exo_outfit, up_gr_fifthab_exo_outfit
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_exo_outfit
+
+[sect_monolith_exo_outfit_immunities]
+burn_immunity				= 0.33
+strike_immunity				= 0.21
+shock_immunity				= 0.33
+wound_immunity				= 0.11
+radiation_immunity			= 0.90
+telepatic_immunity			= 0.70
+chemical_burn_immunity			= 0.23
+explosion_immunity			= 0.32
+fire_wound_immunity			= 0.095
+
+[sect_monolith_exo_outfit_immunities_add]
+burn_immunity				= 0.33
+strike_immunity				= 0.21
+shock_immunity				= 0.33
+wound_immunity				= 0.11
+radiation_immunity			= 0.90
+telepatic_immunity			= 0.70
+chemical_burn_immunity			= 0.23
+explosion_immunity			= 0.32
+fire_wound_immunity			= 0.095

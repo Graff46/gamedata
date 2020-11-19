@@ -1,0 +1,27 @@
+[logic]
+active = remark
+
+[remark]
+anim = prisoner
+meet = meet; {-meet_svistun} meet, no_meet
+combat_ignore_cond = true
+danger = danger@no_danger
+gather_items_enabled = false; не подбирает валяющиеся предметы.
+;help_wounded_enabled = false; не просит помощи, если ранен.
+corpse_detection_enabled = false; не обыскивает трупы
+on_actor_dist_ge = 30| {+gar_presioner_meet} nil
+
+[meet]
+use = true
+meet_dialog = {-gar_presioner_meet} gar_presioner_start, hello_dialog
+
+[remark@free]
+on_actor_dist_ge = 30| %=del%
+meet = no_meet
+
+[danger@no_danger]
+ignore_distance = 0.1
+danger_inertion_time_grenade = 2000
+danger_inertion_time_hit = 2000
+danger_inertion_time_sound = 2000
+danger_inertion_time_ricochet = 0

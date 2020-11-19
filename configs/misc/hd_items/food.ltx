@@ -1,0 +1,388 @@
+[food]:identity_immunities
+GroupControlSection	= spawn_group
+discovery_dependency =
+;$spawn 				= "food and drugs\food"
+$prefetch 			= 8
+class				= S_FOOD
+cform				= skeleton
+visual				= dynamics\items\food\bread.ogf	;dynamics\devices\dev_aptechka\dev_aptechka_low.ogf
+description			= default
+inv_name			= default
+inv_name_short		= default
+inv_weight			= 0.01
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 3
+inv_grid_y			= 18
+cost				= 1
+
+; eatable item
+eat_health			= 0
+eat_satiety			= 0
+eat_power			= 0
+eat_max_power		= 0
+eat_radiation		= 0
+eat_alcohol			= -0.01
+wounds_heal_perc	= 0
+eat_portions_num	= 1
+
+boost_time				= 0.0
+boost_max_weight		= 0.0
+boost_health_restore	= 0.0
+boost_power_restore		= 0.0
+boost_radiation_restore	= 0.0
+boost_bleeding_restore	= 0.0
+
+boost_radiation_protection	= 0.0
+boost_telepat_protection 	= 0.0
+boost_chemburn_protection 	= 0.0
+
+boost_burn_immunity			= 0.0
+boost_shock_immunity		= 0.0
+boost_radiation_immunity	= 0.0
+boost_telepat_immunity		= 0.0
+boost_chemburn_immunity 	= 0.0
+boost_strike_immunity		= 0.0
+boost_wound_immunity		= 0.0
+boost_explosion_immunity	= 0.0
+boost_fire_wound_immunity	= 0.0
+
+use_sound			= interface\inv_food	;characters_voice\multiplayer\team_1\voice_roger_3
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	FOOD
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[bread]:food
+$spawn 				= "food and drugs\bread"
+visual				= dynamics\items\food\bread.ogf
+
+inv_name			= st_bread
+inv_name_short		= st_bread
+description			= st_bread_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 0
+inv_grid_y         = 28
+
+cost				= 150
+inv_weight			= 0.200
+
+attach_angle_offset		= -0.287979, 1.560923, 1.544060
+attach_position_offset	= 0.096910, -0.013594, 0.107925
+attach_bone_name		= bip01_r_hand
+auto_attach				= false
+
+// should be deleted after update
+bone_name				= bip01_r_hand
+position_offset			 = 0.0,0.0,0.0
+angle_offset			 = 1.570790,1.570790,3.92699
+
+boost_time				= 5.0
+boost_health_restore	= 0.0002
+
+eat_satiety				= 0.191
+
+use_sound			= interface\inv_bread
+
+[kolbasa]:food
+$spawn 				= "food and drugs\kolbasa"
+visual				= dynamics\items\food\sausage.ogf
+
+inv_name			= st_kolbasa
+inv_name_short		= st_kolbasa
+description			= st_kolbasa_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 1
+inv_grid_y         = 28
+
+cost				= 170
+inv_weight			= 0.200
+
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	= 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach				= false
+
+// should be deleted after update
+bone_name				= bip01_r_hand
+position_offset			 = 0.0,0.0,0.0
+angle_offset			 = 1.570790,1.570790,3.92699
+
+boost_time				= 5.0
+boost_health_restore	= 0.0003
+
+eat_satiety				= 0.262
+
+use_sound			= interface\inv_sausage
+
+[cheese]:kolbasa
+$spawn 				= "food and drugs\cheese"
+visual				= dynamics\items\food\cheese.ogf;	
+
+inv_name			= st_cheese
+inv_name_short		= st_cheese
+description			= st_cheese_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 2
+inv_grid_y         = 28
+
+cost				= 260
+inv_weight			= 0.200
+
+boost_time				= 5.0
+boost_health_restore	= 0.0003
+
+eat_satiety				= 0.256
+
+use_sound			= interface\inv_cheese
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	CANNED FOOD
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[conserva]:food
+$spawn 				= "food and drugs\conserva"
+visual				= dynamics\items\food\tourist_breakfast_new.ogf	;tourist_breakfast_old.ogf
+
+inv_name			= st_conserva
+inv_name_short		= st_conserva
+description			= st_conserva_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 3
+inv_grid_y         = 28
+
+cost				= 370
+inv_weight			= 0.400
+
+boost_time				= 5.0
+boost_health_restore	= 0.0002
+
+eat_satiety				= 0.225
+
+
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	= 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach				= false
+
+// should be deleted after update
+bone_name				= bip01_r_hand
+position_offset			 = 0.0,0.0,0.0
+angle_offset			 = 1.570790,1.570790,3.92699
+
+use_sound			= interface\inv_canned_stew
+
+[hotcan_military]:conserva
+$spawn 				= "food and drugs\hotcan_military"
+visual				= dynamics\items\food\hotcan_military.ogf
+
+inv_name			= st_hotcan_military
+inv_name_short		= st_hotcan_military
+description			= st_hotcan_military_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 0
+inv_grid_y         = 29
+
+cost				= 820
+inv_weight			= 0.415
+
+boost_time				= 5.0
+boost_health_restore	= 0.0004
+
+eat_satiety				= 0.309
+
+use_sound			= interface\inv_hotcan
+
+[hotcan_standard]:conserva
+$spawn 				= "food and drugs\hotcan_standard"
+visual				= dynamics\items\food\hotcan_standard.ogf
+
+inv_name			= st_hotcan_standard
+inv_name_short		= st_hotcan_standard
+description			= st_hotcan_standard_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 1
+inv_grid_y         = 29
+
+cost				= 820
+inv_weight			= 0.415
+
+boost_time				= 5.0
+boost_health_restore	= 0.0004
+
+eat_satiety				= 0.309
+
+use_sound			= interface\inv_hotcan
+
+[condensed_milk]:conserva
+$spawn 				= "food and drugs\condensed_milk"
+visual				= dynamics\items\food\condensed_milk.ogf
+
+inv_name			= st_condensed_milk
+inv_name_short		= st_condensed_milk
+description			= st_condensed_milk_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 2
+inv_grid_y         = 29
+
+cost				= 250
+inv_weight			= 0.397
+
+boost_time				= 5.0
+boost_health_restore	= 0.0002
+
+eat_satiety				= 0.175
+
+use_sound			= interface\inv_canned_milk
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	SWEETS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[snickers]:kolbasa
+$spawn 				= "food and drugs\snickers"
+visual				= dynamics\items\food\snickers.ogf
+
+inv_name			= st_snickers
+inv_name_short		= st_snickers
+description			= st_snickers_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 0
+inv_grid_y         = 31
+
+cost				= 140
+inv_weight			= 0.050
+
+boost_time				= 5.0
+boost_health_restore	= 0.0001
+
+eat_satiety				= 0.051
+
+use_sound			= interface\inv_chocolate
+
+[hooah]:kolbasa
+$spawn 				= "food and drugs\hooah"
+visual				= dynamics\items\food\hooah.ogf	
+
+inv_name			= st_hooah
+inv_name_short		= st_hooah
+description			= st_hooah_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 1
+inv_grid_y         = 31
+
+cost				= 580
+inv_weight			= 0.065
+
+boost_time				= 800.0
+boost_health_restore	= 0.0003
+boost_max_weight		= 10.0
+
+eat_satiety				= 0.144
+
+use_sound			= interface\inv_chocolate
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	READY TO EAT MEALS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[mre]:conserva
+$spawn 				= "food and drugs\mre"
+visual				= dynamics\items\food\mre.ogf
+
+inv_name			= st_mre
+inv_name_short		= st_mre
+description			= st_mre_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 3
+inv_grid_y         = 32
+
+cost				= 1000
+inv_weight			= 0.750
+
+boost_time				= 20.0
+boost_health_restore	= 0.0001
+
+eat_satiety				= 3.0
+
+use_sound			= interface\inv_mre
+
+[irp_ukr]:mre
+$spawn 				= "food and drugs\irp_ukr"
+visual				= dynamics\items\food\irp_ukr.ogf
+
+inv_name			= st_irp_ukr
+inv_name_short		= st_irp_ukr
+description			= st_irp_ukr_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 0
+inv_grid_y         = 32
+
+cost				= 1000
+inv_weight			= 2.256
+
+boost_time				= 20.0
+boost_health_restore	= 0.0001
+
+eat_satiety				= 6.0
+
+[irp_ukr_old]:mre
+$spawn 				= "food and drugs\irp_ukr_old"
+visual				= dynamics\items\food\irp_ukr_old.ogf
+
+inv_name			= st_irp_ukr_old
+inv_name_short		= st_irp_ukr_old
+description			= st_irp_ukr_old_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 1
+inv_grid_y         = 32
+
+cost				= 800
+inv_weight			= 1.5
+
+boost_time				= 20.0
+boost_health_restore	= 0.0001
+
+eat_satiety				= 5.0
+
+[irp_b]:mre
+$spawn 				= "food and drugs\irp_b"
+visual				= dynamics\items\food\irp_b.ogf
+
+inv_name			= st_irp_b
+inv_name_short		= st_irp_b
+description			= st_irp_b_descr
+
+inv_grid_width     = 1
+inv_grid_height    = 1
+inv_grid_x         = 2
+inv_grid_y         = 32
+
+cost				= 800
+inv_weight			= 1.625
+
+boost_time				= 20.0
+boost_health_restore	= 0.0001
+
+eat_satiety				= 5.0

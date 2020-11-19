@@ -1,0 +1,81 @@
+[esc_village_squad]:online_offline_group
+faction = stalker
+npc = zabor, botanik, galosh, esc_trader, rast
+not_spot_leader = true ; new
+
+[esc_south_bandit_squad]:online_offline_group
+faction = bandit
+npc_random = sim_default_bandit_0
+npc_in_squad = 10, 10
+
+[esc_sim_default_stalker]:online_offline_group
+faction = stalker
+npc_random = sim_default_stalker_0
+npc_in_squad = 3, 3
+
+[esc_crash_most_squad]:esc_south_bandit_squad
+npc_in_squad = 7, 7
+story_id = esc_crash_most_squad
+
+[esc_fabric_squad]:esc_south_bandit_squad
+npc_in_squad = 11, 12
+
+[tunnel_svistun]:online_offline_group
+npc = esc_svistun
+story_id = tun_svistun
+
+[esc_smart_mutants1_squad]:online_offline_group
+faction = monster
+npc_random = boar_normal, flesh_normal
+npc_in_squad = 5, 10
+target_smart = {+esc_rast_task1_report} esc_village, esc_smart_mutants1
+
+[esc_smart_mutants2_squad]:esc_smart_mutants1_squad
+target_smart = {+esc_rast_task1_report} esc_crash_most, esc_smart_mutants2
+
+[esc_smart_mutants3_squad]:online_offline_group
+faction = monster
+npc_random = boar_normal
+npc_in_squad = 3, 4
+
+[esc_smart_mutants3_squad_2]:online_offline_group
+faction = monster
+npc_random = flesh_strong, flesh_normal
+npc_in_squad = 4, 4
+
+[esc_smart_mutants4_squad]:online_offline_group
+faction = monster
+npc_random = dog_cute, dog_normal
+npc_in_squad = 4, 5
+
+[esc_smart_mutants5_squad]:online_offline_group
+faction = monster
+npc_random = flesh_strong, flesh_normal
+npc_in_squad = 3, 4
+
+[esc_smart_mutants6_squad]:online_offline_group
+faction = monster
+npc_random = dog_cute, dog_normal, dog_cute
+
+[esc_smart_mutants7_squad]:online_offline_group
+faction = monster
+npc_random = boar_strong, boar_normal
+npc_in_squad = 5, 5
+
+[esc_smart_mutants7_squad_2]:online_offline_group
+faction = monster
+npc_random = flesh_normal
+
+[esc_smart_mutants8_squad]:online_offline_group
+faction = monster
+npc_random = flesh_strong, flesh_normal
+npc_in_squad = 3, 5
+
+[esc_smart_mutants9_squad]:online_offline_group
+faction = monster
+npc_random = dog_cute, dog_normal, dog_strong
+npc_in_squad = 5, 6
+
+[esc_smart_mutants9_squad_2]:online_offline_group
+faction = monster
+npc_random = pseudodog_normal, pseudodog_normal

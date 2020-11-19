@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+    <string id="esc_start_botanik_10">
+        <text>Повесился он. Не этот тебе сталкер нужен. Тот сталкер, которого ты ищешь, ушёл отсюда посреди ночи. И мы даже заметили как его не стало. Честно говоря, никто и не помнит, как он здесь появился.</text>
+    </string>
+    <string id="esc_start_botanik_2">
+        <text>Тише</text>
+    </string>
+    <string id="esc_start_botanik_3">
+        <text>В чём дело?</text>
+    </string>
+    <string id="esc_start_botanik_4">
+        <text>Да тише я говорю! Ты слышишь, Слышишь, как тут тихо? Это самое тихое место на свете. Было. Тут цветник был, красивый очень, но его вытоптал один сталкер.</text>
+    </string>
+    <string id="esc_start_botanik_5">
+        <text>Как его звали? Кто он?</text>
+    </string>
+    <string id="esc_start_botanik_6">
+        <text>Дикобразом звали. Вытоптал и убежал. Господи, зачем человеку цветы топтать? Это ж как надо всё вознинавидеть? А я учителем его считал. Он глаза мнеоткрыл, понимаешь?</text>
+    </string>
+    <string id="esc_start_botanik_7">
+        <text>Не очень.</text>
+    </string>
+    <string id="esc_start_botanik_8">
+        <text>Случилось с ним что-то. сломался он. Годами людей в Зону водил. А потом перестал.</text>
+    </string>
+    <string id="esc_start_botanik_9">
+        <text>А давно ушёл?</text>
+    </string>
+    <string id="esc_start_galosh_10">
+        <text>Давай КПК. Вот. Сходи сюда - это база бандитов. Там обязательно должно что-то быть.</text>
+    </string>
+    <string id="esc_start_galosh_11">
+        <text>Спасибо. Я пойду.</text>
+    </string>
+    <string id="esc_start_galosh_2">
+        <text>Да, в чём дело?</text>
+    </string>
+    <string id="esc_start_galosh_200">
+        <text>Чего?</text>
+    </string>
+    <string id="esc_start_galosh_201">
+        <text>Спкасибо, Галош.</text>
+    </string>
+    <string id="esc_start_galosh_202">
+        <text>Да на здоровье!</text>
+    </string>
+    <string id="esc_start_galosh_3">
+        <text>Друга своего ищу. Здоровый, небритый, большой шрам на лице, при оружии. Видел такого?</text>
+    </string>
+    <string id="esc_start_galosh_4">
+        <text>Что здесь происходит?</text>
+    </string>
+    <string id="esc_start_galosh_5">
+        <text>Ты не мог бы мне рассказать немного про Зону?</text>
+    </string>
+    <string id="esc_start_galosh_6">
+        <text>Парень, здесь все такие. И все они приходят и уходят.</text>
+    </string>
+    <string id="esc_start_galosh_7">
+        <text>Тут? Происходит? Естественный отбор здесь происходит, парень. Самый что ни на есть естественный отбор. Малого жрёт, большой. Большого жрёт - очень большой. И так далее. Арифметика проста, парень. Дам тебе абсолютно бесплатный и поэтому бесценный совет, таскай с собой как можно больше всего полезного. Особенно аптечек и патронов.</text>
+    </string>
+    <string id="esc_start_galosh_8">
+        <text>А что про неё рассказывать? Стерва она вот и всё. Зона сама по себе очень опасная штучка. Все эти аномалии, радиация и прочая мерзость. Но это не проблема, если знаешь, как с этим бороться. Незаменимая вещь в Зоне - это антирадиционный комплекс. С ним себя чувствуешь, как на пикнике. Серьёзно! Ходишь, гуляешь, и вся Зона тебе по боку! Кроме того, достаточное количество этих антирадиционных чертовщин можно найти просто в соседних комнатах. Одно время хорошие сталкеры их там оставляли, чтоб лишний раз с собой не носить. Но время то идёт, а хороших сталкеров становится всё меньше и меньше.</text>
+    </string>
+    <string id="esc_start_galosh_9">
+        <text>А как на счёт всех этих магических артефактов?</text>
+    </string>
+    <string id="esc_start_rast2_10">
+        <text>Потому что это Зона, зелёный.</text>
+    </string>
+    <string id="esc_start_rast2_11">
+        <text>Это глупо, зелёный, и я тебе сейчас объясню почему. Видишь ли, хорошие люди в Зоне очень много потеряют без меня. И фишка в том, зелёный, что они могут очень сильно обидется. Понимаешь. о чём я тебе сейчас толекую? Поэтому, пока я добрый держи свою рацию и вали отсюда, зелёный, вали.</text>
+    </string>
+    <string id="esc_start_rast2_12">
+        <text>Давай КПК, я покажу.</text>
+    </string>
+    <string id="esc_start_rast2_13">
+        <text>Сделаем, Ржавый.</text>
+    </string>
+    <string id="esc_start_rast2_14">
+        <text>Когда я вернусь, Ржавый, я хочу получить свою рацию. И в этот раз без шуток.</text>
+    </string>
+    <string id="esc_start_rast2_2">
+        <text>Знаешь, зелёный, ты не такой зелёный, каким хочешь казаться.</text>
+    </string>
+    <string id="esc_start_rast2_200">
+        <text>Гуляй, зелёный, гуляй.</text>
+    </string>
+    <string id="esc_start_rast2_3">
+        <text>Моя рация.</text>
+    </string>
+    <string id="esc_start_rast2_300">
+        <text>Работам, работаем.</text>
+    </string>
+    <string id="esc_start_rast2_4">
+        <text>Да, верно, рация. Дело в том, зелёный, что тебе нужно сделать кое-что ещё, если ты хочешь её получить.</text>
+    </string>
+    <string id="esc_start_rast2_5">
+        <text>Например?</text>
+    </string>
+    <string id="esc_start_rast2_6">
+        <text>Пару дней назад я попросил своего хорошего друга, Свистуна, найти одну очень дорогую моему сердцу безделушку - "Лунный свет" называется. Так это. долго что-то Свистуна нет. А без безделушки нельзя, никак нельзя, зелёный.</text>
+    </string>
+    <string id="esc_start_rast2_7">
+        <text>Где это место?</text>
+    </string>
+    <string id="esc_start_rast2_8">
+        <text>Знаешь, Ржавый, я тут подумал, а давай я тебе в голову выстрелю, и мы вместе посмотрим, что из этого будет.</text>
+    </string>
+    <string id="esc_start_rast2_9">
+        <text>Почему бы тебе просто не отдать мне рацию?</text>
+    </string>
+    <string id="esc_start_rast3_10">
+        <text>Молодец зелёный! Вот твоя рация!</text>
+    </string>
+    <string id="esc_start_rast3_2">
+        <text>Да, зелёный.</text>
+    </string>
+    <string id="esc_start_rast3_200">
+        <text>Гуляй, зелёный, гуляй.</text>
+    </string>
+    <string id="esc_start_rast3_3">
+        <text>Я нашел парня. Он жив и скоро вернётся.</text>
+    </string>
+    <string id="esc_start_rast3_4">
+        <text>Я нашел парня. Он мёртв.</text>
+    </string>
+    <string id="esc_start_rast3_5">
+        <text>Молодец, зелёный! Вот твоя рация.</text>
+    </string>
+    <string id="esc_start_rast3_6">
+        <text>Это всё замечательно, зелёный. Где моя безделушка?</text>
+    </string>
+    <string id="esc_start_rast3_7">
+        <text>Вот она. Где моя рация?</text>
+    </string>
+    <string id="esc_start_rast3_8">
+        <text>Ты знаешь, я её не нашёл. А теперь дай мне мою рацию.</text>
+    </string>
+    <string id="esc_start_rast3_9">
+        <text>Плохо, зёленый, очень плохо. Ладно. Вот твоя рация. Всего хорошего.</text>
+    </string>
+    <string id="esc_start_rast_10">
+        <text>Зачем тебе это нужно?</text>
+    </string>
+    <string id="esc_start_rast_101">
+        <text>Да, зелёный?</text>
+    </string>
+    <string id="esc_start_rast_102">
+        <text>Чего ты там хотел за рацию?</text>
+    </string>
+    <string id="esc_start_rast_103">
+        <text>Да нет, проехали.</text>
+    </string>
+    <string id="esc_start_rast_104">
+        <text>Я жтебе говорю, идёшь к шоссе, оно на севере, мочишь ублюдков, которые там сидят, и рация твоя.</text>
+    </string>
+    <string id="esc_start_rast_11">
+        <text>Всего хорошего. Нашёл идиота.</text>
+    </string>
+    <string id="esc_start_rast_12">
+        <text>Эй, зелёный! Это ж Зона.</text>
+    </string>
+    <string id="esc_start_rast_13">
+        <text>Видишь ли, в чём дело, зелёный. Ублюдки, которые там сидят элементарно мешают мне торговать. Если их не будет то я смогу каждому, совершенно бескарыстно, дарить рацию. И тогда, друг мой, и тогда перестанут пропадать такие хоршие и замечательные зелёные как ты. Понимаешь меня?</text>
+    </string>
+    <string id="esc_start_rast_2">
+        <text>Эй, Галош - зелёный прибыл! тебе чего тут надо, зелёный?</text>
+    </string>
+    <string id="esc_start_rast_200">
+        <text>Как только, так сразу, зелёный. Как только, так сразу.</text>
+    </string>
+    <string id="esc_start_rast_3">
+        <text>Друга своего ищу. Здоровый, небритый, шрам на всю харю, при оружии. Видел нет?</text>
+    </string>
+    <string id="esc_start_rast_4">
+        <text>Видел, не видел, много кого видел. Я ж тебе говорю, здесь таких не мало бородатых, со шрамами. А без оружия, зелёный, здесь ни кто не ходит. Так чего тебе надо, зелёный?</text>
+    </string>
+    <string id="esc_start_rast_5">
+        <text>Рация есть?</text>
+    </string>
+    <string id="esc_start_rast_6">
+        <text>Рация? Конечно, зелёный, для тебя все, что угодно. Я её тебе подарю. Только тебе, зелёный, надо будет подарить кое-что мне.</text>
+    </string>
+    <string id="esc_start_rast_7">
+        <text>Выкладывай.</text>
+    </string>
+    <string id="esc_start_rast_8">
+        <text>А что тут говорить. Идёшь к шоссе, оно на севере, мочишь ублюдков, которые там сидят, и рация твоя.</text>
+    </string>
+    <string id="esc_start_rast_9">
+        <text>Договорились.</text>
+    </string>
+    <string id="esc_start_zabor_101">
+        <text>Всё бестолку. Всё.</text>
+    </string>
+    <string id="esc_start_zabor_2">
+        <text>Т-т-т-т-т</text>
+    </string>
+    <string id="esc_start_zabor_3">
+        <text>Что?</text>
+    </string>
+    <string id="esc_start_zabor_4">
+        <text>Т-т-т... Т-ты вообще понимаешь, что ту-ту-тут происходит? Думаешь, какой сюда пришёл, такой отсюда и у-у-у-уйдёшь?</text>
+    </string>
+    <string id="esc_start_zabor_5">
+        <text>В смысле?</text>
+    </string>
+    <string id="esc_start_zabor_6">
+        <text>С-с-с-смысла нет! И б-б-быть не может!</text>
+    </string>
+    <string id="esc_start_zabor_7">
+        <text>Ты можешь мне человеческим языком объяснить, что ты хочешь сказать?</text>
+    </string>
+    <string id="esc_start_zabor_8">
+        <text>Разговаривать сначала научись, обезяна.</text>
+    </string>
+    <string id="esc_start_zabor_9">
+        <text>Я т-т-т-тоже! Тоже думал, что в-в-вот приду сюда, хабара наберу и заживу, все э-э-эти! Эти жиротрясы с чёрными ч-ч-чемоданами! Н-н-н-нет! Это ведь З-з-з-зона! Здесь счастье не д-д-дают тому, кто его хочет. З-з-з-здесь всё сложнее! Всё бестолку.</text>
+    </string>
+    <string id="tunnel_start_svistun_2">
+        <text>Эй, ты! Да, да ты! Ты что глухой? Я к тебе обращаюсь! Иди сюда! Сюда иди, я сказал! Слушай. у меня тут дырка в лёгких - крови на галлон вытекло. Не знаю сколько я еще протяну без аптечки. Всё, что угодно проси, только дай аптечку.</text>
+    </string>
+    <string id="tunnel_start_svistun_3">
+        <text>"Лунный свет" у тебя?</text>
+    </string>
+    <string id="tunnel_start_svistun_4">
+        <text>Да, чёрт подери, у меня! А теперь дай мне эту грёбанную аптечку!</text>
+    </string>
+    <string id="tunnel_start_svistun_5">
+        <text>Хорошо, держи. Артефакт отдашь Ржавому.</text>
+    </string>
+    <string id="tunnel_start_svistun_6">
+        <text>Извени, мужик. Но у меня нет аптечки.</text>
+    </string>
+    <string id="tunnel_start_svistun_7">
+        <text>Да непременно!</text>
+    </string>
+    <string id="tunnel_start_svistun_8">
+        <text>Чёрт! Чёрт!!! Будь ты проклят! Будь ты проклят, гнида!!!</text>
+    </string>
+</string_table>

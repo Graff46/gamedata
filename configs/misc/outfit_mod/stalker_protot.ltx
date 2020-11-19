@@ -1,0 +1,89 @@
+;---------------------------------------------------------------------------------------------
+;		Прототип Экзоскелета
+;---------------------------------------------------------------------------------------------
+[stalker_protot]:outfit_base
+GroupControlSection	= spawn_group
+discovery_dependency =
+$spawn 			= "box\box_1b"
+$prefetch 		= 32
+class			= E_STLK
+cform           = skeleton
+visual          = dynamics\box\box_wood_01
+actor_visual	= actors\stalker_neutral\stalker_exo_proto.ogf
+player_hud_section	= actor_hud_exo_free
+
+ef_equipment_type	= 5
+
+inv_name			= exo_protot_outfit
+inv_name_short		= exo_protot_outfit
+description			= exo_protot_outfit_description
+inv_weight			= 25.0
+slot				= 6
+inv_grid_width     = 2
+inv_grid_height    = 3
+inv_grid_x         = 14
+inv_grid_y         = 13
+
+upgr_icon_x			= 800
+upgr_icon_y			= 0
+upgr_icon_width		= 100
+upgr_icon_height   	= 150
+
+full_icon_name		= npc_icon_exo_outfit
+
+cost				= 40000
+full_scale_icon		= 2,11			;иконка сталкера в костюме в полный рост
+
+immunities_sect			= sect_svoboda_exo_outfit_immunities
+
+; MEDIUM RESISTANCE
+burn_protection 				= 0.034
+shock_protection 				= 0.034
+radiation_protection 			= 0.024
+chemical_burn_protection 		= 0.034
+telepatic_protection 			= 0.034
+strike_protection 				= 0.4
+explosion_protection 			= 0.4
+wound_protection				= 0.4
+fire_wound_protection  			= 0.4
+physic_strike_wound_immunity 	= 0.4
+
+hit_fraction_actor				= 0.2
+bones_koeff_protection			= actor_armor_exo
+
+;запрещение режима Sprint для Актера
+sprint_allowed					= false
+
+helmet_avaliable			 	= false
+power_loss						= 1.0
+additional_inventory_weight		= 30
+additional_inventory_weight2	= 30
+artefact_count                  = 2
+control_inertion_factor			= 2.5
+
+
+upgrades                = ; up_gr_firstab_exo_outfit, up_gr_seconab_exo_outfit, up_gr_thirdab_exo_outfit, up_gr_fourtab_exo_outfit, up_gr_fifthab_exo_outfit
+installed_upgrades      =
+upgrade_scheme          = ; upgrade_scheme_exo_outfit
+
+[sect_stalker_protot_immunities]
+burn_immunity				= 0.01			;коэффициенты иммунитета самого костюма
+strike_immunity				= 0.01
+shock_immunity				= 0.01
+wound_immunity				= 0.01
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.01
+explosion_immunity			= 0.01
+fire_wound_immunity			= 0.01
+
+[sect_stalker_protot_immunities_add]
+burn_immunity				= 0.005			;коэффициенты иммунитета самого костюма
+strike_immunity				= 0.005
+shock_immunity				= 0.005
+wound_immunity				= 0.005
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.005
+explosion_immunity			= 0.005
+fire_wound_immunity			= 0.005

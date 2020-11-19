@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+	<specific_character id="esc_zabor" no_random="1">
+		<name>esc_npc_zabor</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"> </map_icon>
+
+		<class>esc_npc_village</class>
+		<community>stalker</community>
+
+		<snd_config>characters_voice\human_02\stalker\</snd_config>
+		<rank>160</rank>
+		<reputation>500</reputation>
+		<money min="1000" max="14000" infinitive="1" />
+		<visual>actors\stalker_neutral\stalker_neutral_1</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_toz34 \n
+        ammo_12x70_buck \n
+        wpn_pm \n
+        ammo_9x18_fmj \n
+        grenade_rgd5 \n
+
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals_4.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+
+	</specific_character>
+
+	<specific_character id="esc_botanik" no_random="1">
+		<name>esc_npc_botanik</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"> </map_icon>
+
+		<class>esc_npc_village</class>
+		<community>stalker</community>
+
+		<snd_config>characters_voice\human_01\stalker\</snd_config>
+		<rank>160</rank>
+		<reputation>500</reputation>
+		<money min="1000" max="14000" infinitive="1" />
+		<visual>actors\stalker_neutral\stalker_neutral_2_face_5</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_mp5 \n
+        ammo_9x19_fmj \n
+        wpn_pm \n
+        ammo_9x18_fmj \n
+        grenade_rgd5 \n
+
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals_4.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+
+	</specific_character>
+
+	<specific_character id="esc_galosh" no_random="1">
+		<name>esc_npc_galosh</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"> </map_icon>
+
+		<class>esc_npc_village</class>
+		<community>stalker</community>
+
+		<snd_config>characters_voice\human_02\stalker\</snd_config>
+		<rank>160</rank>
+		<reputation>500</reputation>
+		<money min="1000" max="14000" infinitive="1" />
+		<visual>actors\stalker_neutral\stalker_neutral_1_face_2</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_mp5 \n
+        ammo_9x19_fmj \n
+        wpn_pm \n
+        ammo_9x18_fmj \n
+        grenade_rgd5 \n
+
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals_4.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+
+	</specific_character>
+
+
+	<specific_character id="esc_rast" no_random="1">
+		<name>esc_npc_rast</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"> </map_icon>
+
+		<class>esc_npc_village</class>
+		<community>stalker</community>
+
+		<snd_config>characters_voice\human_02\stalker\</snd_config>
+		<rank>160</rank>
+		<reputation>500</reputation>
+		<money min="1000" max="14000" infinitive="1" />
+		<visual>actors\stalker_neutral\stalker_neutral_2_face_3</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_bm16 \n
+        ammo_12x70_buck \n
+        wpn_pm \n
+        ammo_9x18_fmj \n
+        grenade_rgd5 \n
+
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals_4.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+
+	</specific_character>
+
+	<specific_character id="esc_trader" no_random="1">
+		<name>trader</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"> </map_icon>
+
+		<class>esc_npc_village</class>
+		<community>stalker</community>
+
+		<snd_config>characters_voice\human_02\stalker\</snd_config>
+		<rank>160</rank>
+		<reputation>500</reputation>
+		<money min="1000" max="14000" infinitive="1" />
+		<visual>actors\stalker_neutral\stalker_neutral_2_face_7</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_bm16 \n
+        ammo_12x70_buck \n
+        wpn_pm \n
+        ammo_9x18_fmj \n
+        grenade_rgd5 \n
+
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals_4.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+
+	</specific_character>
+
+	<specific_character id="esc_svistun" no_random="1">
+		<name>esc_npc_svistun</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"> </map_icon>
+
+		<class>esc_npc_village</class>
+		<community>stalker</community>
+
+		<snd_config>characters_voice\human_02\stalker\</snd_config>
+		<rank>160</rank>
+		<reputation>500</reputation>
+		<money min="1000" max="14000" infinitive="0" />
+		<visual>actors\stalker_neutral\stalker_neutral_2_face_7</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_ak74 \n
+        ammo_5.45x39_fmj \n
+        wpn_pm \n
+        ammo_9x18_fmj \n
+        grenade_rgd5 \n
+		svistun_art \n
+
+#include "gameplay\character_items.xml"
+#include "gameplay\character_food.xml"
+#include "gameplay\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals_4.xml"
+
+		<start_dialog>hello_dialog</start_dialog>
+
+	</specific_character>
+
+	
+
+
+</xml>

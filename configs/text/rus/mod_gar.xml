@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	
+	<string id="gar_presioner">
+		<text>Свалка</text>
+	</string>
+	
+	<string id="gar_presioner_descr">
+		<text>Последний раз Кэп был замечен на свалке техники</text>
+	</string>
+	
+</string_table>

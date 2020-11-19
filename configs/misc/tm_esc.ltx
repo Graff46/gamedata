@@ -1,0 +1,46 @@
+[quest_gen]
+icon = ui_inGame2_Skat_1
+prior = 2
+storyline = true
+title = quest_gen
+descr = quest_gen_descr
+condlist_0 = {+not} complete
+
+[esc_find_art_start]
+icon = ui_inGame2_Skat_1
+prior = 1
+storyline = false
+title = find_art_on_fabric
+descr = find_art_on_fabric_desc
+target = fabric_art
+;on_init = %=esc_mod.start_find_art%
+condlist_0 = {=actor_has_item(fabric_art)} complete
+on_complete = %+esc_galosh_art_complite%
+
+[esc_rast_task1_give]; bandit kill on most
+icon = ui_inGame2_Skat_1
+prior = 1
+storyline = true
+title = {!squad_exist(esc_crash_most_squad)} raport_rast %+esc_rast_task1_report%, quest_esc_most
+descr = {+esc_rast_task1_report} raport_rast, quest_esc_most_desc
+target = {+esc_rast_task1_report} esc_rast, esc_crash_most_squad
+condlist_0 = {+esc_rast_task1_compl} complete
+
+[esc_rast_task2_give]; in tunnels 
+icon = ui_inGame2_Skat_1
+prior = 2
+storyline = true
+title = {+tunnel_rast_task2_report} raport_rast, quest_esc_tunnel
+descr = {+tunnel_rast_task2_report} raport_rast, quest_esc_tunnel_desc
+on_init = %=esc_mod.spw_esc_svistun%
+target = {=esc_mod.target_svistun} tun_svistun, {+tunnel_rast_task2_report} esc_rast, esc_cl_to_tunnel
+condlist_0 = {+tunnel_rast_task2_compl} complete
+condlist_1 = {=actor_has_item(svistun_art)} %+tunnel_rast_task2_report%
+
+[esc_has_radio]; racia1
+icon = ui_inGame2_Skat_1
+prior = 2
+storyline = true
+title = quest_esc_radio
+descr = quest_esc_radio_descr
+condlist_0 = {+radio_efir_1} complete

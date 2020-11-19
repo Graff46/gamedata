@@ -1,0 +1,83 @@
+;---------------------------------------------------------------------------------------------
+;		 Œ—“ﬁÃ Ã»À»“¿–» (— ¿“-9Ã)
+;---------------------------------------------------------------------------------------------
+[military_extra_outfit]:outfit_base
+GroupControlSection		= spawn_group
+discovery_dependency 		=
+$spawn 				= "outfit\military_extra_outfit"
+;$prefetch 			= 32
+class				= E_STLK
+cform           			= skeleton
+ef_equipment_type			= 4
+
+visual          			= dynamics\outfit_mod\military_assault_outfit
+actor_visual			= actors\stalker_soldier\stalker_soldier_7.ogf
+player_hud_section			= actor_hud_07
+
+inv_name				= military_extra_outfit_name
+inv_name_short			= military_extra_outfit_name
+description			= military_extra_outfit_description
+
+inv_weight			= 12.0
+
+slot				= 6
+
+inv_grid_width			= 2
+inv_grid_height			= 3
+inv_grid_x			= 26
+inv_grid_y			= 3
+
+upgr_icon_x			= 300
+upgr_icon_y			= 300
+upgr_icon_width		= 100
+upgr_icon_height   	= 150
+
+full_icon_name			= npc_icon_military_outfit
+
+cost				= 39000
+
+full_scale_icon			= 10,6
+
+immunities_sect			= sect_military_extra_outfit_immunities
+
+; MEDIUM RESISTANCE
+burn_protection                     = 0.0900
+shock_protection                     = 0.400
+radiation_protection                = 0.0150
+chemical_burn_protection           = 0.0900
+telepatic_protection                = 0.0600
+strike_protection                     = 0.0405
+explosion_protection                = 0.0405
+wound_protection                    = 0.0405
+
+hit_fraction_actor				= 0.4
+bones_koeff_protection			= actor_armor_heavy
+helmet_avaliable			 	= false
+
+artefact_count			= 0
+
+upgrades                = up_gr_firstab_military_outfit, up_gr_seconab_military_outfit, up_gr_thirdab_military_outfit, up_gr_fourtab_military_outfit
+installed_upgrades      =
+upgrade_scheme          = upgrade_scheme_military_outfit
+
+[sect_military_extra_outfit_immunities]
+burn_immunity			= 0.04
+strike_immunity			= 0.04
+shock_immunity			= 0.04
+wound_immunity			= 0.04
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.04
+explosion_immunity		= 0.03
+fire_wound_immunity		= 0.01
+
+[sect_military_extra_outfit_immunities_add]
+burn_immunity			= 0.03
+strike_immunity			= 0.03
+shock_immunity			= 0.03
+wound_immunity			= 0.03
+radiation_immunity			= 0.0
+telepatic_immunity			= 0.0
+chemical_burn_immunity		= 0.03
+explosion_immunity		= 0.02
+fire_wound_immunity		= 0.008

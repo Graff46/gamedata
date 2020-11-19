@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+    <string id="gar_presioner_start_0">
+        <text>Эй, эй, тихо, парень, тихо я тебе говорю! Вот мой ствол, я его в сторону положу. Будем не кусаться, будем общаться. Понял меня?</text>
+    </string>
+    <string id="gar_presioner_start_1">
+        <text>Где он?</text>
+    </string>
+    <string id="gar_presioner_start_2">
+        <text>Я скажу тебе. Только ты тихо, без нервов. Спокойно. Человек который тебе нужен, проходил тут не очень далеко. Я его сразу запомнил, большой такой, шрам на морде, хорошая пушка у него. Шёл в сторону лагеря сталкеров неподалёку. Всё окей, правда?</text>
+    </string>
+    <string id="gar_presioner_start_3">
+        <text>Всего хорошего.</text>
+    </string>
+</string_table>

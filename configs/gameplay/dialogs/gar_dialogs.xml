@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+    <dialog id="gar_presioner_start">
+        <phrase_list>
+            <phrase id="1">
+                <text>gar_presioner_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>gar_presioner_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>gar_presioner_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>gar_presioner_start_3</text>
+                <give_info>gar_presioner_meet</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>
