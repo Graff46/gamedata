@@ -1,0 +1,10 @@
+function prename(obj)
+	local name = obj:name()
+	local suffix = string.match(name, ".+(_%d*)$")
+	log("prename1:"..name)
+	if suffix then
+		name = string.gsub(name, suffix, '')
+	end
+	
+	return name
+end
