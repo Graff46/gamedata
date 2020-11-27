@@ -73,11 +73,11 @@ end
 function se_zone_anom:STATE_Read( packet, size )
 	cse_anomalous_zone.STATE_Read( self, packet, size )
 	
-	self.ini = pn.checkCD(self, 'anomalies')
-	
 	if editor() then
 		return
 	end
+	
+	self.ini = pn.checkCD(self, 'anomalies')
 --	if self.m_registred ~= true then
 --		return
 --	end
@@ -143,11 +143,11 @@ end
 function se_zone_torrid:STATE_Read( packet, size )
 	cse_torrid_zone.STATE_Read( self, packet, size )
 	
-	self.ini = pn.checkCD(self, 'anomalies')
-
 	if editor() then
 		return
 	end
+	
+	self.ini = pn.checkCD(self, 'anomalies')
 --	if self.m_registred ~= true then
 --		return
 --	end
@@ -209,11 +209,11 @@ end
 function se_zone_visual:STATE_Read( packet, size )
 	cse_zone_visual.STATE_Read( self, packet, size )
 	
-	self.ini = pn.checkCD(self, 'anomalies')
-
 	if editor() then
 		return
 	end
+	
+	self.ini = pn.checkCD(self, 'anomalies')
 
 	if (is_single_player_game() == false) then
 		return
@@ -248,6 +248,10 @@ end
 
 function se_restrictor:STATE_Read( packet, size )
 	cse_alife_space_restrictor.STATE_Read( self, packet, size )
+	
+	if editor() then
+		return
+	end
 	
 	self.ini = pn.checkCD(self, 'anomalies')
 end
