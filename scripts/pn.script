@@ -1,10 +1,41 @@
+--*******************
+-- Graff46 27.11.2020
+--*******************
+
+local FS = getFS()
+
+CDAutoPath = {}
+
 function prename(obj)
 	local name = obj:name()
 	local suffix = string.match(name, ".+(_%d*)$")
-	log("prename1:"..name)
+
 	if suffix then
 		name = string.gsub(name, suffix, '')
 	end
 	
 	return name
+end
+
+
+function checkCD(obj, path)
+	local id = obj.id
+	if type(id) == 'function' then
+		id = obj:id()
+	end
+	
+	local currCd = CDAutoPath[id]
+	if currCd then
+		return currCd
+	end
+	
+	local cd = obj:spawn_ini()
+
+	local filename = string.format("logic\\%s\\%s.ltx", path, prename(obj))
+	if FS:exist("$game_config$", filename) then
+		CDAutoPath[id] = ini_file(filename)
+		return CDAutoPath[id]
+	else
+		return cd
+	end
 end

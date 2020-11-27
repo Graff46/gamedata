@@ -84,9 +84,9 @@ function get_story_objects_registry()
 	return story_obj_registry
 end
 
-function check_spawn_ini_for_story_id(se_obj) 
+function check_spawn_ini_for_story_id(se_obj, ini) 
 	--printf("checking obj[%s] for story_id!!!",se_obj:name())
-	local spawn_ini = se_obj:spawn_ini()
+	local spawn_ini = ini or se_obj:spawn_ini()
 	if spawn_ini:section_exist("story_object") then
 		local result, id, value
 		result, id, value	= spawn_ini:r_line("story_object",0,"","")
