@@ -1,3 +1,7 @@
+function cam_anim()
+	--level.run_demo_play([[mod\2]]);
+end
+
 function start_find_art()
 	local id = get_story_object_id('esc_fabrika_inv_box')
 	id = alife():create("fabric_art", vector(), 0, 0, id).id
@@ -12,7 +16,21 @@ function target_svistun()
 	return levelName == 'esc_tunnel' and not has_alife_info('tunnel_rast_task2_report')
 end
 
-function spw_esc_svistun() log1('! spw_esc_svistun:spw')
-	--alife():create('esc_svistun', vector():set(-186.123566, -46.403450, -74.364845), 963, 18)
-	alife():create('esc_svistun', vector():set(-185.900269, -46.435852, -74.512413), 789, 20)
+do
+	local skipSr = {}
+	function spw_squad_near_me(actor, cobj, p)
+		local sobj = alife():object(cobj:id())
+		local squadId = pn.prename(sobj) .."_squad"
+		--"esc_rast_task2_give"
+		
+		if skipSr[cobj:name()] then
+			return
+		end
+		
+		skipSr[cobj:name()] = true
+		if cobj:name() == "esc_tunnel_tushkan2_sr" then
+			return sim_board.get_sim_board():create_squad(alife():object('esc_tunnel_script_object'), squadId, true, true)
+		end
+		return sim_board.get_sim_board():create_squad(sobj, squadId, true, true)
+	end
 end

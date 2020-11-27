@@ -349,6 +349,10 @@ end
 --' Получение следующего экшна на выполнение
 function sim_squad_scripted:get_next_action(under_simulation)
 	local squad_target = alife():object(self.assigned_target_id)
+	
+	if squad_target and not squad_target.am_i_reached then
+		return 
+	end
 	--printf("assigned_target = [%s]", tostring(self.assigned_target_id))
 	if self.current_target_id == nil then
 		if squad_target == nil or squad_target:am_i_reached(self) then
@@ -510,7 +514,7 @@ function sim_squad_scripted:set_location_types(new_smart_name)
 	end
 end
 
-function sim_squad_scripted:add_squad_member(spawn_section, spawn_position, lv_id, gv_id, sect_number)
+function sim_squad_scripted:add_squad_member(spawn_section, spawn_position, lv_id, gv_id, sect_number, noLimPos)
 	local spawn_sections_ltx = system_ini()
 	local custom_data = utils.cfg_get_string(spawn_sections_ltx, spawn_section, "custom_data", self, false, "", "default_custom_data.ltx")
 	if custom_data ~= "default_custom_data.ltx" then
@@ -527,7 +531,7 @@ function sim_squad_scripted:add_squad_member(spawn_section, spawn_position, lv_i
 	self:register_member(obj.id)
 	self.sound_manager:register_npc(obj.id)
 
-	if simulation_objects.is_on_the_same_level(obj, alife():actor()) and position:distance_to_sqr(alife():actor().position) <= alife():switch_distance()^2 then
+	if simulation_objects.is_on_the_same_level(obj, alife():actor()) and position:distance_to_sqr(alife():actor().position) <= alife():switch_distance()^2 and not noLimPos then
 		db.spawned_vertex_by_id[obj.id] = lv_id
 	end
 
@@ -535,14 +539,19 @@ function sim_squad_scripted:add_squad_member(spawn_section, spawn_position, lv_i
 end
 
 --' Создание чуваков в отряд
-function sim_squad_scripted:create_npc(spawn_smart)
+function sim_squad_scripted:create_npc(spawn_smart, noLimPos)
 	local ini = system_ini()
 	local spawn_sections = utils.parse_names(utils.cfg_get_string(ini, self.settings_id, "npc", self, false, "", ""))
 
-	local spawn_point = utils.cfg_get_string(ini, self.settings_id, "spawn_point", self, false, "","self") or
-						utils.cfg_get_string(spawn_smart.ini, smart_terrain.SMART_TERRAIN_SECT, "spawn_point", self, false,"","self")
-	spawn_point = xr_logic.parse_condlist(self, "spawn_point", "spawn_point", spawn_point)
-	spawn_point = xr_logic.pick_section_from_condlist(db.actor, self, spawn_point)
+	local spawn_point = utils.cfg_get_string(ini, self.settings_id, "spawn_point", self, false, "", false) 
+	if (not spawn_point) and spawn_smart.ini then
+		utils.cfg_get_string(spawn_smart.ini, smart_terrain.SMART_TERRAIN_SECT, "spawn_point", self, false,"","self")
+	end
+	
+	if spawn_point then
+		spawn_point = xr_logic.parse_condlist(self, "spawn_point", "spawn_point", spawn_point)
+		spawn_point = xr_logic.pick_section_from_condlist(db.actor, self, spawn_point)
+	end
 
 	--print_table(debug.getinfo(1))
 	printf("SPAWN SMART %s", spawn_smart:name())
@@ -550,7 +559,7 @@ function sim_squad_scripted:create_npc(spawn_smart)
 	local base_spawn_position = spawn_smart.position
 	local base_lvi = spawn_smart.m_level_vertex_id
 	local base_gvi = spawn_smart.m_game_vertex_id
-	if spawn_point ~= nil then
+	if spawn_point then
 		if spawn_point == "self" then
 			base_spawn_position = spawn_smart.position
 			base_lvi = spawn_smart.m_level_vertex_id
@@ -567,14 +576,14 @@ function sim_squad_scripted:create_npc(spawn_smart)
 	end
 	if #spawn_sections ~= 0 then
 		for k,v in pairs(spawn_sections) do
-			self:add_squad_member(v, base_spawn_position, base_lvi, base_gvi,k)
+			self:add_squad_member(v, base_spawn_position, base_lvi, base_gvi, k, noLimPos)
 		end
 	end
 
 	-- подспаун рэндомных чуваков...
 	local random_spawn = utils.cfg_get_string(ini, self.settings_id, "npc_random", self, false, "",nil)
 	if random_spawn ~= nil then
-		random_spawn 				= 	utils.parse_names(random_spawn)
+		random_spawn 				= utils.parse_names(random_spawn)
 		local count_min, count_max 	= utils.r_2nums( ini,  self.settings_id, "npc_in_squad", 1, 2 )
 		if count_min > count_max then
 			abort("min_count can't be greater then max_count [%s]!!!!!", self.settings_id)
@@ -582,7 +591,7 @@ function sim_squad_scripted:create_npc(spawn_smart)
 		local random_count	 		= math.random(count_min, count_max)
 		for i = 1,random_count do
 			local random_id = math.random(1, #random_spawn)
-			self:add_squad_member(random_spawn[random_id], base_spawn_position, base_lvi, base_gvi,random_id)
+			self:add_squad_member(random_spawn[random_id], base_spawn_position, base_lvi, base_gvi, random_id, noLimPos)
 		end
 	elseif #spawn_sections == 0 then
 		abort("You are trying to spawn an empty squad [%s]!!!", self.settings_id)

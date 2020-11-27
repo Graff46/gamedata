@@ -605,7 +605,7 @@ function pick_section_from_condlist(actor, npc, condlist)
 					--abort("TRYING TO SET INFOS THEN ACTOR IS NIL")
 				end
 				if infop.func then
-					local scr, fname = 'xr_conditions', infop.func
+					local scr, fname = 'xr_effects', infop.func
 					if (string.find(infop.func, '[.]') or -1) > 1  then
 						scr, fname = string.match(infop.func, '(.+)[.]([^()]+)')
 					end 

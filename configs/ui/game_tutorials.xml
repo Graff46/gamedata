@@ -727,6 +727,7 @@
     <auto_static x="0" y="32" width="1024" height="576" stretch="1">
       <texture x="1" y="1"  width="638" height="358">intro\cop_intro_movie</texture>
     </auto_static>
+	<function_on_stop>esc_mod.cam_anim</function_on_stop>
   </global_wnd>
 
   <global_wnd_16 width="1024" height="768">
@@ -734,6 +735,7 @@
     <auto_static width="1024" height="768" stretch="1">
       <texture x="1" y="1"  width="638" height="358">intro\cop_intro_movie</texture>
     </auto_static>
+	<function_on_stop>esc_mod.cam_anim</function_on_stop>
   </global_wnd_16>
 
   <item>

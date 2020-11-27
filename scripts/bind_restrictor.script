@@ -57,6 +57,7 @@ function restrictor_binder:net_spawn(data)
 		if ini:section_exist("apply_on_combat") then
 		combat_restrictor.register_combat_restrictor(self.object)
 	end
+	
 
 	return true
 end

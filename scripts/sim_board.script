@@ -219,7 +219,7 @@ function sim_board:unregister_smart(obj)
 end
 
 --' Создание нового отряда
-function sim_board:create_squad(spawn_smart, sq_id)
+function sim_board:create_squad(spawn_smart, sq_id, noSmart, noLimPos)
 	printf("create squad called")
 	local squad_id = tostring(sq_id)
 
@@ -230,9 +230,12 @@ function sim_board:create_squad(spawn_smart, sq_id)
 	--squad:init_squad(spawn_smart)
 	printf("Creating squad[%s] in smart[%s]", squad_id, spawn_smart:name())
 	--' Определяем в каком смарте создать новый отряд
-	squad:create_npc(spawn_smart)
+	squad:create_npc(spawn_smart, noLimPos)
 	squad:set_squad_relation()
-	self:assign_squad_to_smart(squad, spawn_smart.id)
+	
+	if not noSmart then
+		self:assign_squad_to_smart(squad, spawn_smart.id)
+	end
 
 	--' Пересчитываем Team, Squad, Group
 	for k in squad:squad_members() do
