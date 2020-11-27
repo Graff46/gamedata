@@ -218,6 +218,7 @@ end
 --' Рестрикторы
 class "se_restrictor" (cse_alife_space_restrictor)
 function se_restrictor:__init (section) super (section)
+	
 end
 
 function se_restrictor:on_register()

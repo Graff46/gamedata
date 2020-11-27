@@ -2854,3 +2854,12 @@ function up_remove_all()
 	game_cleaner.cleaning(true)
 end
 -- Jurok
+
+--Graff46:
+function spw_squad_near_me(actor, cobj, p)
+	local sobj = alife():object(cobj:id())
+	local squadId = p[1] and p[1] or pn.prename(sobj) .."_squad"
+	return sim_board.get_sim_board():create_squad(sobj, p[1])
+end
+	
+	

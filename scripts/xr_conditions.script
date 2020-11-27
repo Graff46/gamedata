@@ -187,6 +187,10 @@ function obj_in_zone(actor, zone, p)
 	return false
 end
 
+function actor_in_this_zone(actor, zone, p)
+	return utils.npc_in_zone(db.actor, zone)
+end
+
 --[[
 --	Параметры: [sid:def*] def=true|false
 --	* параметр не обязателен

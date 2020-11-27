@@ -28,10 +28,10 @@ story_id = tun_svistun
 faction = monster
 npc_random = boar_normal, flesh_normal
 npc_in_squad = 5, 10
-target_smart = {+esc_rast_task1_report} esc_village, esc_smart_mutants1
+target_smart = {+esc_rast_task1_report} esc_crash_most, esc_smart_mutants1
 
 [esc_smart_mutants2_squad]:esc_smart_mutants1_squad
-target_smart = {+esc_rast_task1_report} esc_crash_most, esc_smart_mutants2
+target_smart = {+esc_rast_task1_report} esc_village, esc_smart_mutants2
 
 [esc_smart_mutants3_squad]:online_offline_group
 faction = monster
@@ -79,3 +79,24 @@ npc_in_squad = 5, 6
 [esc_smart_mutants9_squad_2]:online_offline_group
 faction = monster
 npc_random = pseudodog_normal, pseudodog_normal
+
+[tun_tunnel_rat_sr_squad]:online_offline_group
+faction = monster
+npc_random = rat_1, rat_2, rat_3
+npc_in_squad = 2,4
+spawn_point = tun_esc_rats1
+
+[esc_tunnel_rat_sr2_squad]:tun_tunnel_rat_sr_squad
+spawn_point = esc_tun_rat2
+
+[esc_tunnel_rat3_sr_squad]:tun_tunnel_rat_sr_squad
+spawn_point = esc_tun_rat3
+
+[esc_tunnel_tushkan1_sr_squad]:tun_tunnel_rat_sr_squad
+npc_random = tushkano_normal
+npc_in_squad = 2,4
+spawn_point = esc_tun_tushkan1
+
+[esc_tunnel_tushkan2_sr_squad]:esc_tunnel_tushkan1_sr_squad
+;spawn_point = esc_tun_tushkan2
+npc_in_squad = 4,6

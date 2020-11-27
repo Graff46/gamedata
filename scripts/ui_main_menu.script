@@ -348,7 +348,9 @@ function main_menu:OnKeyboard(dik, keyboard_action)  --virtual function
 		elseif dik == DIK_keys.DIK_Q then
 			self:OnMessageQuitWin()
 		elseif dik == DIK_keys.DIK_U then
-			esc_mod.spw_esc_svistun()
+			db.actor:give_info_portion('esc_mytest')
+		elseif dik == DIK_keys.DIK_T then
+			db.actor:set_actor_position(alife():object('esc_tunnel_script_object').position)
 		end
 
 	end

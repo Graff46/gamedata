@@ -38,6 +38,12 @@ function se_stalker:__init (section) super (section)
 	end
 
 	self.board = sim_board.get_sim_board()
+	self.canOnline = true
+	
+	if self:spawn_ini():section_exist("on_spawn") then
+		self.triggerSpawn = self:spawn_ini():r_string("on_spawn", "info")
+		self.canOnline = false
+	end
 end
 --------------------
 function se_stalker:get_ini()
@@ -58,7 +64,7 @@ function se_stalker:can_switch_online()
 	if self.group_id ~= 65535 then
 		return true
 	end
-	return cse_alife_human_stalker.can_switch_online(self)
+	return cse_alife_human_stalker.can_switch_online(self) and self.canOnline
 end
 
 function se_stalker:switch_online()
@@ -105,6 +111,10 @@ function se_stalker:on_register()
 	cse_alife_human_stalker.on_register( self )
 	-- Проверяем кастомдату обьекта на наличие стори айди.
 	story_objects.check_spawn_ini_for_story_id(self)
+	
+	if not self.canOnline then
+		return
+	end
 
 	self.board 	= sim_board.get_sim_board()
 
@@ -160,6 +170,11 @@ end
 --------------------
 function se_stalker:update()
 	cse_alife_human_stalker.update(self)
+	
+	if (not self.canOnline) and has_alife_info(self.triggerSpawn) then
+		self.canOnline = true
+		self:on_register()
+	end
 end
 
 ----------------------------------------------------------------------------------------------------------------------

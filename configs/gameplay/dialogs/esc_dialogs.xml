@@ -50,181 +50,6 @@
             </phrase>
         </phrase_list>
     </dialog>
-    <dialog id="esc_start_rast">
-        <dont_has_info>esc_rast_task1_report</dont_has_info>
-        <phrase_list>
-            <phrase id="4">
-                <text>esc_start_rast_4</text>
-                <next>5</next>
-            </phrase>
-            <phrase id="5">
-                <text>esc_start_rast_5</text>
-                <next>6</next>
-            </phrase>
-            <phrase id="7">
-                <text>esc_start_rast_7</text>
-                <next>8</next>
-            </phrase>
-            <phrase id="102">
-                <text>esc_start_rast_102</text>
-                <next>104</next>
-            </phrase>
-            <phrase id="8">
-                <text>esc_start_rast_8</text>
-                <next>9</next>
-                <next>10</next>
-                <next>11</next>
-            </phrase>
-            <phrase id="104">
-                <text>esc_start_rast_104</text>
-                <next>9</next>
-                <next>10</next>
-                <next>11</next>
-            </phrase>
-            <phrase id="11">
-                <text>esc_start_rast_11</text>
-                <give_info>esc_rast_refusa_task1l</give_info>
-                <next>12</next>
-            </phrase>
-            <phrase id="12">
-                <text>esc_start_rast_12</text>
-            </phrase>
-            <phrase id="10">
-                <text>esc_start_rast_10</text>
-                <next>13</next>
-            </phrase>
-            <phrase id="13">
-                <text>esc_start_rast_13</text>
-            </phrase>
-            <phrase id="9">
-                <text>esc_start_rast_9</text>
-                <give_info>esc_rast_task1_give</give_info>
-            </phrase>
-            <phrase id="101">
-                <text>esc_start_rast_101</text>
-                <dont_has_info>esc_rast_task1_give</dont_has_info>
-                <has_info>esc_rast_refusa_task1</has_info>
-                <next>102</next>
-                <next>103</next>
-            </phrase>
-            <phrase id="103">
-                <text>esc_start_rast_103</text>
-            </phrase>
-            <phrase id="1">
-                <text />
-                <next>2</next>
-                <next>101</next>
-                <next>200</next>
-            </phrase>
-            <phrase id="200">
-                <text>esc_start_rast_200</text>
-                <has_info>esc_rast_task1_give</has_info>
-            </phrase>
-            <phrase id="3">
-                <text>esc_start_rast_3</text>
-                <next>4</next>
-            </phrase>
-            <phrase id="2">
-                <text>esc_start_rast_2</text>
-                <dont_has_info>esc_rast_refusa_task1</dont_has_info>
-                <dont_has_info>esc_rast_task1_give</dont_has_info>
-                <next>3</next>
-            </phrase>
-            <phrase id="0">
-                <text />
-                <next>1</next>
-            </phrase>
-            <phrase id="6">
-                <text>esc_start_rast_6</text>
-                <next>7</next>
-            </phrase>
-        </phrase_list>
-    </dialog>
-    <dialog id="esc_start_rast2">
-        <has_info>esc_rast_task1_report</has_info>
-        <dont_has_info>tunnel_rast_task2_report</dont_has_info>
-        <phrase_list>
-            <phrase id="4">
-                <text>esc_start_rast2_4</text>
-                <next>5</next>
-            </phrase>
-            <phrase id="10">
-                <text>esc_start_rast2_10</text>
-                <next>7</next>
-                <next>8</next>
-            </phrase>
-            <phrase id="7">
-                <text>esc_start_rast2_7</text>
-                <next>12</next>
-            </phrase>
-            <phrase id="5">
-                <text>esc_start_rast2_5</text>
-                <next>6</next>
-            </phrase>
-            <phrase id="12">
-                <text>esc_start_rast2_12</text>
-                <next>13</next>
-                <next>14</next>
-            </phrase>
-            <phrase id="13">
-                <text>esc_start_rast2_13</text>
-                <give_info>esc_rast_task2_give</give_info>
-            </phrase>
-            <phrase id="14">
-                <text>esc_start_rast2_14</text>
-                <give_info>esc_rast_task2_give</give_info>
-            </phrase>
-            <phrase id="8">
-                <text>esc_start_rast2_8</text>
-                <next>11</next>
-            </phrase>
-            <phrase id="11">
-                <text>esc_start_rast2_11</text>
-                <give_info>esc_rast_task1_threat</give_info>
-                <give_info>esc_has_radio</give_info>
-            </phrase>
-            <phrase id="9">
-                <text>esc_start_rast2_9</text>
-                <next>10</next>
-            </phrase>
-            <phrase id="300">
-                <text>esc_start_rast2_300</text>
-                <has_info>esc_rast_task2_give</has_info>
-            </phrase>
-            <phrase id="200">
-                <text>esc_start_rast2_200</text>
-                <dont_has_info>esc_rast_task2_give</dont_has_info>
-                <has_info>esc_rast_task1_threat</has_info>
-            </phrase>
-            <phrase id="0">
-                <text />
-                <next>1</next>
-            </phrase>
-            <phrase id="6">
-                <text>esc_start_rast2_6</text>
-                <next>7</next>
-                <next>8</next>
-                <next>9</next>
-            </phrase>
-            <phrase id="1">
-                <text />
-                <next>2</next>
-                <next>200</next>
-                <next>300</next>
-            </phrase>
-            <phrase id="3">
-                <text>esc_start_rast2_3</text>
-                <next>4</next>
-            </phrase>
-            <phrase id="2">
-                <text>esc_start_rast2_2</text>
-                <dont_has_info>esc_rast_task1_threat</dont_has_info>
-                <dont_has_info>esc_rast_task2_give</dont_has_info>
-                <give_info>esc_rast_task1_compl</give_info>
-                <next>3</next>
-            </phrase>
-        </phrase_list>
-    </dialog>
     <dialog id="tunnel_start_svistun">
         <phrase_list>
             <phrase id="1">
@@ -333,6 +158,73 @@
             </phrase>
         </phrase_list>
     </dialog>
+    <dialog id="esc_start_galosh">
+        <phrase_list>
+            <phrase id="11">
+                <text>esc_start_galosh_11</text>
+            </phrase>
+            <phrase id="3">
+                <text>esc_start_galosh_3</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>esc_start_galosh_6</text>
+            </phrase>
+            <phrase id="4">
+                <text>esc_start_galosh_4</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>esc_start_galosh_7</text>
+            </phrase>
+            <phrase id="5">
+                <text>esc_start_galosh_5</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>esc_start_galosh_9</text>
+                <dont_has_info>esc_find_art_start</dont_has_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_start_galosh_2</text>
+                <dont_has_info>esc_galosh_art_complite</dont_has_info>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>9</next>
+                <next>11</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>200</next>
+            </phrase>
+            <phrase id="200">
+                <text>esc_start_galosh_200</text>
+                <has_info>esc_galosh_art_complite</has_info>
+                <next>201</next>
+            </phrase>
+            <phrase id="201">
+                <text>esc_start_galosh_201</text>
+                <next>202</next>
+            </phrase>
+            <phrase id="202">
+                <text>esc_start_galosh_202</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="8">
+                <text>esc_start_galosh_8</text>
+            </phrase>
+            <phrase id="10">
+                <text>esc_start_galosh_10</text>
+                <action>esc_mod.start_find_art</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
     <dialog id="esc_start_botanik">
         <phrase_list>
             <phrase id="1">
@@ -380,70 +272,178 @@
             </phrase>
         </phrase_list>
     </dialog>
-    <dialog id="esc_start_galosh">
+    <dialog id="esc_start_rast">
+        <dont_has_info>esc_rast_task1_report</dont_has_info>
         <phrase_list>
-            <phrase id="11">
-                <text>esc_start_galosh_11</text>
-            </phrase>
-            <phrase id="3">
-                <text>esc_start_galosh_3</text>
-                <next>6</next>
-            </phrase>
-            <phrase id="6">
-                <text>esc_start_galosh_6</text>
-            </phrase>
             <phrase id="4">
-                <text>esc_start_galosh_4</text>
-                <next>7</next>
-            </phrase>
-            <phrase id="7">
-                <text>esc_start_galosh_7</text>
+                <text>esc_start_rast_4</text>
+                <next>5</next>
             </phrase>
             <phrase id="5">
-                <text>esc_start_galosh_5</text>
+                <text>esc_start_rast_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>esc_start_rast_7</text>
                 <next>8</next>
             </phrase>
-            <phrase id="9">
-                <text>esc_start_galosh_9</text>
-                <dont_has_info>esc_find_art_start</dont_has_info>
-                <next>10</next>
+            <phrase id="11">
+                <text>esc_start_rast_11</text>
+                <give_info>esc_rast_refusa_task1l</give_info>
+                <next>12</next>
             </phrase>
-            <phrase id="2">
-                <text>esc_start_galosh_2</text>
-                <dont_has_info>esc_galosh_art_complite</dont_has_info>
-                <next>3</next>
-                <next>4</next>
-                <next>5</next>
-                <next>9</next>
-                <next>11</next>
+            <phrase id="12">
+                <text>esc_start_rast_12</text>
+            </phrase>
+            <phrase id="10">
+                <text>esc_start_rast_10</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>esc_start_rast_13</text>
+            </phrase>
+            <phrase id="103">
+                <text>esc_start_rast_103</text>
             </phrase>
             <phrase id="1">
                 <text></text>
                 <next>2</next>
+                <next>101</next>
                 <next>200</next>
             </phrase>
             <phrase id="200">
-                <text>esc_start_galosh_200</text>
-                <has_info>esc_galosh_art_complite</has_info>
-                <next>201</next>
+                <text>esc_start_rast_200</text>
+                <has_info>esc_rast_task1_give</has_info>
             </phrase>
-            <phrase id="201">
-                <text>esc_start_galosh_201</text>
-                <next>202</next>
+            <phrase id="3">
+                <text>esc_start_rast_3</text>
+                <next>4</next>
             </phrase>
-            <phrase id="202">
-                <text>esc_start_galosh_202</text>
+            <phrase id="2">
+                <text>esc_start_rast_2</text>
+                <dont_has_info>esc_rast_refusa_task1</dont_has_info>
+                <dont_has_info>esc_rast_task1_give</dont_has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="6">
+                <text>esc_start_rast_6</text>
+                <next>7</next>
             </phrase>
             <phrase id="0">
                 <text></text>
                 <next>1</next>
             </phrase>
+            <phrase id="9">
+                <text>esc_start_rast_9</text>
+                <give_info>esc_rast_task1_give</give_info>
+            </phrase>
             <phrase id="8">
-                <text>esc_start_galosh_8</text>
+                <text>esc_start_rast_8</text>
+                <next>9</next>
+                <next>10</next>
+                <next>11</next>
+            </phrase>
+            <phrase id="101">
+                <text>esc_start_rast_101</text>
+                <dont_has_info>esc_rast_task1_give</dont_has_info>
+                <has_info>esc_rast_refusa_task1</has_info>
+                <next>102</next>
+                <next>103</next>
+            </phrase>
+            <phrase id="102">
+                <text>esc_start_rast_102</text>
+                <next>104</next>
+            </phrase>
+            <phrase id="104">
+                <text>esc_start_rast_104</text>
+                <next>9</next>
+                <next>10</next>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_start_rast2">
+        <has_info>esc_rast_task1_report</has_info>
+        <dont_has_info>tunnel_rast_task2_report</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>esc_start_rast2_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>esc_start_rast2_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="300">
+                <text>esc_start_rast2_300</text>
+                <has_info>esc_rast_task2_give</has_info>
+            </phrase>
+            <phrase id="200">
+                <text>esc_start_rast2_200</text>
+                <dont_has_info>esc_rast_task2_give</dont_has_info>
+                <has_info>esc_rast_task1_threat</has_info>
+            </phrase>
+            <phrase id="1">
+                <text></text>
+                <next>2</next>
+                <next>200</next>
+                <next>300</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_start_rast2_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_start_rast2_2</text>
+                <dont_has_info>esc_rast_task1_threat</dont_has_info>
+                <dont_has_info>esc_rast_task2_give</dont_has_info>
+                <give_info>esc_rast_task1_compl</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text></text>
+                <next>1</next>
+            </phrase>
+            <phrase id="14">
+                <text>esc_start_rast2_14</text>
+                <give_info>esc_rast_task2_give</give_info>
+            </phrase>
+            <phrase id="6">
+                <text>esc_start_rast2_6</text>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="11">
+                <text>esc_start_rast2_11</text>
+                <give_info>esc_rast_task1_threat</give_info>
+                <give_info>esc_has_radio</give_info>
+            </phrase>
+            <phrase id="8">
+                <text>esc_start_rast2_8</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="9">
+                <text>esc_start_rast2_9</text>
+                <next>10</next>
             </phrase>
             <phrase id="10">
-                <text>esc_start_galosh_10</text>
-                <action>esc_mod.start_find_art</action>
+                <text>esc_start_rast2_10</text>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="7">
+                <text>esc_start_rast2_7</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>esc_start_rast2_12</text>
+                <next>13</next>
+                <next>14</next>
+            </phrase>
+            <phrase id="13">
+                <text>esc_start_rast2_13</text>
+                <give_info>esc_rast_task2_give</give_info>
             </phrase>
         </phrase_list>
     </dialog>
