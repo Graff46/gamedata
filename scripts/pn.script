@@ -39,3 +39,19 @@ function checkCD(obj, path)
 		return cd
 	end
 end
+
+function applyForce(cobj, x, y, z)
+	x, y, z = x or 1, y or 1, z or 1
+	local ph = cobj:get_physics_shell()
+	if ph then
+		return ph:apply_force(x, y, z)
+	end
+end
+
+function getNPC(fobj, sobj)
+	if fobj:id() == db.actor:id() then
+		return sobj
+	else
+		return fobj
+	end
+end

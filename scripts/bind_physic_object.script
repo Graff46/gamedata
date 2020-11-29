@@ -8,12 +8,13 @@ function init(obj)
 	----------------------------------------------------------------------------------------
 	-- Новые схемы
 	----------------------------------------------------------------------------------------
+	pn.applyForce(obj)
 	local ini = obj:spawn_ini()
 	-- Биндить предмет нет смысла, если у него нет секции logic
 	if not (ini and ini:section_exist("logic")) then
 		-- Прожектор нужно биндить даже без logic
 		if obj:clsid() ~= clsid.inventory_box then
-			return
+			return other_physics_binder.init(obj)
 		end
 	end
 
