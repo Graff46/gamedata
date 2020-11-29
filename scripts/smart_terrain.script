@@ -360,6 +360,10 @@ end
 function se_smart_terrain:register_npc(obj)
 	printf("[smart_terrain %s] register called obj=%s", self:name(), obj:name())
 	self.population = self.population + 1
+	
+	if obj:spawn_ini():section_exist("no_smart_terrain") then
+		return
+	end
 
 	if self.b_registred == false then
 		table.insert(self.npc_to_register, obj)
