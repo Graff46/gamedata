@@ -1,0 +1,57 @@
+--*******************
+-- Graff46 27.11.2020
+--*******************
+
+local FS = getFS()
+
+CDAutoPath = {}
+
+function prename(obj)
+	local name = obj:name()
+	local suffix = string.match(name, ".+(_%d*)$")
+
+	if suffix then
+		name = string.gsub(name, suffix, '')
+	end
+	
+	return name
+end
+
+
+function checkCD(obj, path)
+	local id = obj.id
+	if type(id) == 'function' then
+		id = obj:id()
+	end
+	
+	local currCd = CDAutoPath[id]
+	if currCd then
+		return currCd
+	end
+	
+	local cd = obj:spawn_ini()
+
+	local filename = string.format("logic\\%s\\%s.ltx", path, prename(obj))
+	if FS:exist("$game_config$", filename) then
+		CDAutoPath[id] = ini_file(filename)
+		return CDAutoPath[id]
+	else
+		return cd
+	end
+end
+
+function applyForce(cobj, x, y, z)
+	x, y, z = x or 1, y or 1, z or 1
+	local ph = cobj:get_physics_shell()
+	if ph then
+		return ph:apply_force(x, y, z)
+	end
+end
+
+function getNPC(fobj, sobj)
+	if fobj:id() == db.actor:id() then
+		return sobj
+	else
+		return fobj
+	end
+end

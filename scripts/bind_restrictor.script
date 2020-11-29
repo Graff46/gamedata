@@ -15,6 +15,7 @@ class "restrictor_binder" ( object_binder )
 function restrictor_binder:__init(obj, char_ini) super(obj)
 	self.initialized = false
 	self.loaded = false
+	self.ini = pn.checkCD(obj, 'restrictors')
 end
 
 function restrictor_binder:reload(section)
@@ -45,7 +46,7 @@ function restrictor_binder:net_spawn(data)
 	end
 
 	--' Если это рестиктор информационной территории - зарегистрить его.
-	local ini = self.object:spawn_ini()
+	local ini = self.ini --self.object:spawn_ini()
 	if not ini then
 		return true
 	end
@@ -81,7 +82,7 @@ end
 function restrictor_binder:update(delta)
 	if not self.initialized and db.actor then
 		self.initialized = true
-		xr_logic.initialize_obj(self.object, self.st, self.loaded, db.actor, modules.stype_restrictor)
+		xr_logic.initialize_obj(self.object, self.st, self.loaded, db.actor, modules.stype_restrictor, self.ini)
 	end
 
 	self.object:info_clear()

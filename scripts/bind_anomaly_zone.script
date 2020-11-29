@@ -12,7 +12,7 @@ end
 
 class "anomaly_zone_binder" (object_binder)
 function anomaly_zone_binder:__init(obj) super(obj)
-	self.ini = obj:spawn_ini()
+	self.ini = pn.checkCD(obj, 'anomalies')--obj:spawn_ini()
 
 	if not self.ini:section_exist(ANOMAL_ZONE_SECT) then
 		printf( "[anomal_zone %s] no configuration!", obj:name() )

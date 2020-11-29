@@ -2861,5 +2861,9 @@ function spw_squad_near_me(actor, cobj, p)
 	local squadId = p[1] and p[1] or pn.prename(sobj) .."_squad"
 	return sim_board.get_sim_board():create_squad(sobj, p[1])
 end
+
+function apply_force(actor, npc, p)
+    npc:get_physics_shell():apply_force(0.0001, 0.0001, 0.0001)
+end
 	
 	
