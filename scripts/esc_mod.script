@@ -28,9 +28,27 @@ do
 		end
 		
 		skipSr[cobj:name()] = true
-		if cobj:name() == "esc_tunnel_tushkan2_sr" then
-			return sim_board.get_sim_board():create_squad(alife():object('esc_tunnel_script_object'), squadId, true, true)
+		if cobj:name() == "esc_tunnel_tushkan2_sr" then 
+			local ph = level.object_by_id(alife():object("esc_tunnel_trup_bandit").id):get_physics_shell()
+			
+			ph:get_element_by_bone_name('bip01_head'):release_fixed()
+			return ph:apply_force(35500, 0, 35500)
 		end
 		return sim_board.get_sim_board():create_squad(sobj, squadId, true, true)
 	end
+end
+
+function svs_art_give(actor, npc)
+	dialogs.relocate_item_section(pn.getNPC(actor, npc), 'svistun_art', 'in')
+end
+
+function has_svistun_art(actor, npc)
+	return npc:object("svistun_art")
+end
+
+function svistun_spw()
+	local p = patrol('tun_svistun_pnt')
+	local pos, lv, gv = p:point(0), p:level_vertex_id(0), p:game_vertex_id(0)
+	
+	alife():create('esc_svistun', pos, lv, gv)
 end

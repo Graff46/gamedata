@@ -348,11 +348,10 @@ function main_menu:OnKeyboard(dik, keyboard_action)  --virtual function
 		elseif dik == DIK_keys.DIK_Q then
 			self:OnMessageQuitWin()
 		elseif dik == DIK_keys.DIK_U then
-			db.actor:give_info_portion('esc_mytest')
+			db.actor:give_info_portion('esc_rast_task2_give')
 		elseif dik == DIK_keys.DIK_T then
-			db.actor:set_actor_position(alife():object('esc_tunnel_script_object').position)
+			esc_mod.svistun_spw()
 		end
-
 	end
 
 	return true
