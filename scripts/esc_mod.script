@@ -28,11 +28,10 @@ do
 		end
 		
 		skipSr[cobj:name()] = true
-		if cobj:name() == "esc_tunnel_tushkan2_sr" then 
+		if cobj:name() == "esc_tunnel_tushkan2_sr" then --
 			local ph = level.object_by_id(alife():object("esc_tunnel_trup_bandit").id):get_physics_shell()
-			
 			ph:get_element_by_bone_name('bip01_head'):release_fixed()
-			return ph:apply_force(35500, 0, 35500)
+			return ph:apply_force(0, 0, 55500)
 		end
 		return sim_board.get_sim_board():create_squad(sobj, squadId, true, true)
 	end

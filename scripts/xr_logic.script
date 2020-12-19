@@ -1393,10 +1393,10 @@ function get_customdata_or_ini_file(npc, filename)
 	end
 end
 
-function initialize_obj(obj, st, loaded, actor, stype)
+function initialize_obj(obj, st, loaded, actor, stype, CDini)
 	if not loaded then
 		local ini_filename = "<customdata>"
-		local ini = get_customdata_or_ini_file(obj, ini_filename)
+		local ini = CDini or get_customdata_or_ini_file(obj, ini_filename)
 		ini = xr_logic.configure_schemes(obj, ini, ini_filename, stype, "logic", "")
 		local sect = xr_logic.determine_section_to_activate(obj, ini, "logic", actor)
 		xr_logic.activate_by_section(obj, ini, sect,  st.gulag_name, false)

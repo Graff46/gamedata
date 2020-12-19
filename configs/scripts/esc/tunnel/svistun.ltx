@@ -3,16 +3,18 @@ info = esc_rast_task2_give
 
 [logic]
 active = remark
+on_death = death
 
 [remark]
 anim = wounded_heavy
 meet = {-meet_svistun} meet, no_meet
 combat_ignore_cond = true
 danger = danger@no_danger
+use = true
 gather_items_enabled = false; не подбирает валяющиеся предметы.
 ;help_wounded_enabled = false; не просит помощи, если ранен.
 corpse_detection_enabled = false; не обыскивает трупы
-on_info = {+tunnel_given_medkit_svistun} remark@free
+;on_info = {+tunnel_given_medkit_svistun} remark@free
 
 [meet]
 use = true
@@ -22,4 +24,9 @@ meet_dialog = tunnel_start_svistun, hello_dialog
 on_actor_dist_ge = 30| %=del%
 meet = no_meet
 
+[death]
+on_info = nil %+tunnel_rast_task2_report%
+
 [dont_spawn_character_supplies]
+
+[no_smart_terrain]
