@@ -207,6 +207,8 @@ function actor_binder:use_inventory_item(obj)
 			get_console():execute("snd_volume_music 0")
 			get_console():execute("snd_volume_eff 0")
 		end
+		
+		uses.use(obj)
 	end
 end
 

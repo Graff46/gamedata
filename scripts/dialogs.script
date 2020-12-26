@@ -95,16 +95,26 @@ function kill_yourself(npc, actor)
 	npc:kill(actor)
 end
 
+function is_quest(section)
+	local sysini = system_ini()
+	if sysini:line_exist(section, 'quest_item') then
+		return sysini:r_bool(section, 'quest_item')
+	end
+	
+	return false
+end
+
 --' Use this function instead.
 function relocate_item_section(victim, section, type, amount)
 	if db.actor then
+		local ltx = system_ini()
 		if not amount then
 			amount = 1
 		end
 		for i = 1, amount do
 			if type == "in" then
 			--' Трансферить нужно только квестовые предметы.
-				if quest_section[section] == true and victim ~= nil and victim:object(section) ~= nil then
+				if ((quest_section[section] == true) or is_quest(section)) and victim ~= nil and victim:object(section) ~= nil then
 					victim:transfer_item(victim:object(section), db.actor)
 				else
 					alife():create(section,

@@ -7,6 +7,10 @@
 	
 	<string id="gar_presioner_descr">
 		<text>Последний раз Кэп был замечен на свалке техники</text>
+	</string>	
+	
+	<string id="gar_presioner2_descr">
+		<text>Допросить бандита</text>
 	</string>
 	
 </string_table>

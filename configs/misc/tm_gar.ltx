@@ -2,8 +2,10 @@
 icon = ui_inGame2_Skat_1
 prior = 2
 storyline = true
-target = {=squad_exist(gar_svalka_squad)} gar_svalka_smart, bandit_presioner 
+target = {-gar_need_presioner} gar_svalka_smart, bandit_presioner 
 title = gar_presioner
-descr = gar_presioner_descr
+descr = {-gar_need_presioner} gar_presioner_descr, gar_presioner2_descr
 condlist_0 = {+gar_presioner_meet} complete
+condlist_1 = {!squad_exist(gar_svalka_squad) -gar_need_presioner} %+gar_need_presioner%
+on_init = %=gar_mod.spw_presioner%
 ;on_complete = %+%
