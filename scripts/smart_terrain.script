@@ -1306,7 +1306,7 @@ function se_smart_terrain:target_precondition(squad, need_to_dec_population)
 		squad_count = squad_count - 1
 	end
 	
-	if squad_count ~= nil and (self.max_population <= squad_count) then
+	if squad_count ~= nil and ((self.max_population or 0) <= squad_count) then
 		--printf("smart terrain [%s] precondition returns false for squad [%s]", self:name(), squad:name())
 --		if tonumber(self.props["surge"]) > 0 and xr_conditions.surge_started() then
 --			printf("SURGE_SMART_STATS : smart [%s]\n max_population = %d \ squad_count = %d", self:name(), self.max_population, squad_count)

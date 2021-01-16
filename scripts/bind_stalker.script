@@ -31,7 +31,7 @@ function actor_binder:__init (obj) super(obj)
 	self.last_detective_achievement_spawn_time 	= nil
 	self.last_mutant_hunter_achievement_spawn_time	= nil
 	
-	self.task_ini = ini_file("misc\\task_manager.ltx") -- Graff46
+	self.task_ini = ini_file("gameplay\\quests\\task_manager.ltx") -- Graff46
 end
 
 --------------------------------------------------------------------------------

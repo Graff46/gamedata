@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <game_dialogs>
-    <dialog id="gar_presioner_start">
+    <dialog id="gar_krot_start">
         <phrase_list>
             <phrase id="1">
-                <text>gar_presioner_start_1</text>
-                <next>2</next>
+                <text>gar_krot_start_1</text>
+                <next>4</next>
             </phrase>
+            <phrase id="11">
+                <text>gar_krot_start_11</text>
+            </phrase>
+            <phrase id="4">
+                <text>gar_krot_start_4</text>
+                <next>5</next>
+                <next>7</next>
+                <next>9</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="7">
+                <text>gar_krot_start_7</text>
+                <precondition>gar_mod.precond_krot</precondition>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>gar_krot_start_9</text>
+                <precondition>gar_mod.precond_krot</precondition>
+                <next>10</next>
+            </phrase>
+            <phrase id="6">
+                <text>gar_krot_start_6</text>
+                <action>gar_mod.out_money2krot</action>
+            </phrase>
+            <phrase id="8">
+                <text>gar_krot_start_8</text>
+                <action>gar_mod.out_money2krot</action>
+            </phrase>
+            <phrase id="10">
+                <text>gar_krot_start_10</text>
+                <action>gar_mod.out_money2krot</action>
+            </phrase>
+            <phrase id="5">
+                <text>gar_krot_start_5</text>
+                <precondition>gar_mod.precond_krot</precondition>
+                <next>6</next>
+            </phrase>
+            <phrase id="3">
+                <text>gar_krot_start_3</text>
+                <action>dialog.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>gar_krot_start_2</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="12">
+                <text>gar_krot_start_12</text>
+            </phrase>
+            <phrase id="0">
+                <text>gar_krot_start_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="gar_presioner_start">
+        <phrase_list>
             <phrase id="2">
                 <text>gar_presioner_start_2</text>
                 <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>gar_presioner_start_1</text>
+                <next>2</next>
             </phrase>
             <phrase id="0">
                 <text>gar_presioner_start_0</text>
@@ -17,6 +79,137 @@
             <phrase id="3">
                 <text>gar_presioner_start_3</text>
                 <give_info>gar_presioner_meet</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="gar_harya_start">
+        <phrase_list>
+            <phrase id="7">
+                <text>gar_harya_start_7</text>
+                <give_info>quest_gar_west_road</give_info>
+            </phrase>
+            <phrase id="6">
+                <text>gar_harya_start_6</text>
+            </phrase>
+            <phrase id="3">
+                <text>gar_harya_start_3</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="2">
+                <text>gar_harya_start_2</text>
+                <dont_has_info>gar_west_road_die</dont_has_info>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="5">
+                <text>gar_harya_start_5</text>
+            </phrase>
+            <phrase id="4">
+                <text>gar_harya_start_4</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="9">
+                <text>gar_harya_start_9</text>
+                <has_info>gar_west_road_compl</has_info>
+            </phrase>
+            <phrase id="8">
+                <text>gar_harya_start_8</text>
+                <action>gar_mod.give_merk_outfit</action>
+                <dont_has_info>gar_west_road_compl</dont_has_info>
+                <give_info>gar_west_road_compl</give_info>
+                <has_info>gar_west_road_die</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="gar_batka_start">
+        <phrase_list>
+            <phrase id="3">
+                <text>gar_batka_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>gar_batka_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="4">
+                <text>gar_batka_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>gar_batka_start_6</text>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="7">
+                <text>gar_batka_start_7</text>
+                <dont_has_info>quest_gar_battery</dont_has_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>gar_batka_start_10</text>
+                <action>gar_mod.spw_battery</action>
+            </phrase>
+            <phrase id="9">
+                <text>gar_batka_start_9</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>gar_batka_start_11</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="15">
+                <text>gar_batka_start_15</text>
+                <has_info>quest_gar_battery_final</has_info>
+            </phrase>
+            <phrase id="13">
+                <text>gar_batka_start_13</text>
+                <precondition>gar_mod.has_battery</precondition>
+                <dont_has_info>quest_gar_battery_final</dont_has_info>
+                <next>14</next>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="14">
+                <text>gar_batka_start_14</text>
+                <action>gar_mod.transfer_battery</action>
+                <give_info>quest_gar_battery_compl</give_info>
+                <give_info>quest_gar_battery_final</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>gar_batka_start_12</text>
+            </phrase>
+            <phrase id="8">
+                <text>gar_batka_start_8</text>
+                <precondition>gar_mod.has_500r</precondition>
+                <action>gar_mod.money_coffe</action>
+                <next>12</next>
+            </phrase>
+            <phrase id="0">
+                <text></text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text></text>
+                <next>2</next>
+                <next>13</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="2">
+                <text>gar_batka_start_2</text>
+                <dont_has_info>quest_gar_battery_have</dont_has_info>
+                <next>3</next>
             </phrase>
         </phrase_list>
     </dialog>

@@ -13,7 +13,7 @@
 		<rank>160</rank>
 		<reputation>500</reputation>
 		<money min="1000" max="14000" infinitive="1" />
-		<visual>actors\stalker_neutral\stalker_neutral_1</visual>
+		<visual>actors\mod_hero\zabor</visual>
 
 		<supplies>
       [spawn] \n
@@ -45,7 +45,7 @@
 		<rank>160</rank>
 		<reputation>500</reputation>
 		<money min="1000" max="14000" infinitive="1" />
-		<visual>actors\stalker_neutral\stalker_neutral_2_face_5</visual>
+		<visual>actors\mod_hero\botanik</visual>
 
 		<supplies>
       [spawn] \n
@@ -110,7 +110,7 @@
 		<rank>160</rank>
 		<reputation>500</reputation>
 		<money min="1000" max="14000" infinitive="1" />
-		<visual>actors\stalker_neutral\stalker_neutral_2_face_3</visual>
+		<visual>actors\mod_hero\rast</visual>
 
 		<supplies>
       [spawn] \n

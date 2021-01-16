@@ -3,7 +3,7 @@ local random_task = nil
 class "CRandomTask"
 function CRandomTask:__init()
 	--' Ќа конструкторе вычитываем LTX и создаем заготовки квестов.
-	self.task_ini = ini_file("misc\\task_manager.ltx")
+	self.task_ini = ini_file("gameplay\\quests\\task_manager.ltx")
 
 	--' “аблица проинициализированных квестов.
 	self.task_info = {}

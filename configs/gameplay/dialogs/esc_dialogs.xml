@@ -67,53 +67,6 @@
             </phrase>
         </phrase_list>
     </dialog>
-    <dialog id="esc_start_botanik">
-        <phrase_list>
-            <phrase id="1">
-                <text></text>
-                <next>2</next>
-            </phrase>
-            <phrase id="3">
-                <text>esc_start_botanik_3</text>
-                <next>4</next>
-            </phrase>
-            <phrase id="4">
-                <text>esc_start_botanik_4</text>
-                <next>5</next>
-            </phrase>
-            <phrase id="5">
-                <text>esc_start_botanik_5</text>
-                <next>6</next>
-            </phrase>
-            <phrase id="6">
-                <text>esc_start_botanik_6</text>
-                <next>7</next>
-            </phrase>
-            <phrase id="7">
-                <text>esc_start_botanik_7</text>
-                <next>8</next>
-            </phrase>
-            <phrase id="8">
-                <text>esc_start_botanik_8</text>
-                <next>9</next>
-            </phrase>
-            <phrase id="9">
-                <text>esc_start_botanik_9</text>
-                <next>10</next>
-            </phrase>
-            <phrase id="2">
-                <text>esc_start_botanik_2</text>
-                <next>3</next>
-            </phrase>
-            <phrase id="10">
-                <text>esc_start_botanik_10</text>
-            </phrase>
-            <phrase id="0">
-                <text></text>
-                <next>1</next>
-            </phrase>
-        </phrase_list>
-    </dialog>
     <dialog id="esc_start_rast">
         <dont_has_info>esc_rast_task1_report</dont_has_info>
         <phrase_list>
@@ -140,7 +93,7 @@
                 <text>esc_start_rast_103</text>
             </phrase>
             <phrase id="1">
-                <text></text>
+                <text />
                 <next>2</next>
                 <next>101</next>
                 <next>200</next>
@@ -170,7 +123,7 @@
                 <next>11</next>
             </phrase>
             <phrase id="0">
-                <text></text>
+                <text />
                 <next>1</next>
             </phrase>
             <phrase id="5">
@@ -204,56 +157,6 @@
             </phrase>
         </phrase_list>
     </dialog>
-    <dialog id="esc_start_zabor">
-        <phrase_list>
-            <phrase id="4">
-                <text>esc_start_zabor_4</text>
-                <next>5</next>
-            </phrase>
-            <phrase id="7">
-                <text>esc_start_zabor_7</text>
-                <next>9</next>
-            </phrase>
-            <phrase id="2">
-                <text>esc_start_zabor_2</text>
-                <dont_has_info>esc_zabor_meet1</dont_has_info>
-                <next>3</next>
-            </phrase>
-            <phrase id="1">
-                <text></text>
-                <next>2</next>
-                <next>101</next>
-            </phrase>
-            <phrase id="101">
-                <text>esc_start_zabor_101</text>
-                <has_info>esc_zabor_meet1</has_info>
-            </phrase>
-            <phrase id="8">
-                <text>esc_start_zabor_8</text>
-            </phrase>
-            <phrase id="9">
-                <text>esc_start_zabor_9</text>
-                <give_info>esc_zabor_meet1</give_info>
-            </phrase>
-            <phrase id="3">
-                <text>esc_start_zabor_3</text>
-                <next>4</next>
-            </phrase>
-            <phrase id="5">
-                <text>esc_start_zabor_5</text>
-                <next>6</next>
-            </phrase>
-            <phrase id="0">
-                <text></text>
-                <next>1</next>
-            </phrase>
-            <phrase id="6">
-                <text>esc_start_zabor_6</text>
-                <next>7</next>
-                <next>8</next>
-            </phrase>
-        </phrase_list>
-    </dialog>
     <dialog id="esc_start_rast2">
         <has_info>esc_rast_task1_report</has_info>
         <dont_has_info>tunnel_rast_task2_report</dont_has_info>
@@ -267,7 +170,7 @@
                 <has_info>esc_rast_task2_give</has_info>
             </phrase>
             <phrase id="1">
-                <text></text>
+                <text />
                 <next>2</next>
                 <next>200</next>
                 <next>300</next>
@@ -321,7 +224,7 @@
                 <give_info>esc_rast_task2_give</give_info>
             </phrase>
             <phrase id="0">
-                <text></text>
+                <text />
                 <next>1</next>
             </phrase>
             <phrase id="7">
@@ -358,7 +261,7 @@
                 <give_info>esc_has_radio</give_info>
             </phrase>
             <phrase id="1">
-                <text></text>
+                <text />
                 <next>2</next>
                 <next>200</next>
             </phrase>
@@ -396,7 +299,7 @@
                 <next>5</next>
             </phrase>
             <phrase id="0">
-                <text></text>
+                <text />
                 <next>1</next>
             </phrase>
             <phrase id="4">
@@ -409,7 +312,7 @@
     <dialog id="tunnel_start_svistun">
         <phrase_list>
             <phrase id="1">
-                <text></text>
+                <text />
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -452,8 +355,105 @@
                 <next>5</next>
             </phrase>
             <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_start_botanik">
+        <phrase_list>
+            <phrase id="1">
+                <text></text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_start_botanik_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>esc_start_botanik_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>esc_start_botanik_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>esc_start_botanik_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>esc_start_botanik_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>esc_start_botanik_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>esc_start_botanik_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_start_botanik_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="10">
+                <text>esc_start_botanik_10</text>
+            </phrase>
+            <phrase id="0">
                 <text></text>
                 <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_start_zabor">
+        <phrase_list>
+            <phrase id="4">
+                <text>esc_start_zabor_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="7">
+                <text>esc_start_zabor_7</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="8">
+                <text>esc_start_zabor_8</text>
+            </phrase>
+            <phrase id="9">
+                <text>esc_start_zabor_9</text>
+                <give_info>esc_zabor_meet1</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>esc_start_zabor_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>esc_start_zabor_6</text>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="0">
+                <text></text>
+                <next>1</next>
+            </phrase>
+            <phrase id="101">
+                <text>esc_start_zabor_101</text>
+                <has_info>esc_zabor_meet1</has_info>
+            </phrase>
+            <phrase id="1">
+                <text></text>
+                <next>2</next>
+                <next>101</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_start_zabor_2</text>
+                <dont_has_info>esc_zabor_meet1</dont_has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_start_zabor_3</text>
+                <next>4</next>
             </phrase>
         </phrase_list>
     </dialog>

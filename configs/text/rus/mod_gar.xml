@@ -12,5 +12,41 @@
 	<string id="gar_presioner2_descr">
 		<text>Допросить бандита</text>
 	</string>
+		
+	<string id="gar_npc_harya">
+		<text>Харя</text>
+	</string>
+			
+	<string id="gar_npc_batka">
+		<text>Батька</text>
+	</string>
+				
+	<string id="gar_npc_krot">
+		<text>Крот</text>
+	</string>
+		
+	<string id="quest_west_road">
+		<text>Устранение</text>
+	</string>
+	
+	<string id="quest_west_road_descr">
+		<text>Уничтожить бандитов на восточной дороге</text>
+	</string>
+		
+	<string id="quest_west_road2_descr">
+		<text>Отчитаться Харе</text>
+	</string>
+		
+	<string id="quest_gar_battery">
+		<text>Достать артефакт "Батарейка"</text>
+	</string>
+		
+	<string id="quest_gar_battery_descr">
+		<text>Достать артефакт "Батарейка"</text>
+	</string>
+	
+	<string id="quest_gar_battery2_descr">
+		<text>Отдать артефакт "Батарейка" Батьке</text>
+	</string>
 	
 </string_table>

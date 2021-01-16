@@ -1143,5 +1143,25 @@
 		<class>esc_npc_village</class>
 		<specific_character>esc_svistun</specific_character>
 	</character>
+	
+	<character id="gar_harya">
+		<class>gar_harya</class>
+		<specific_character>gar_harya</specific_character>
+	</character>
+	
+	<character id="gar_batka">
+		<class>gar_batka</class>
+		<specific_character>gar_batka</specific_character>
+	</character>
+
+	<character id="gar_krot">
+		<class>gar_krot</class>
+		<specific_character>gar_krot</specific_character>
+	</character>
+	
+	<character id="gar_trader">
+		<class>gar_trader</class>
+		<specific_character>gar_trader</specific_character>
+	</character>
 
 </xml>

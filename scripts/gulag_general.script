@@ -709,74 +709,49 @@ function load_job(smart)
 					it = it + 1
 				end
 				if it > 1 then table.insert(stalker_jobs.jobs, stalker_def_camper) end
-				table.insert(job_table, stalker_jobs)
 				
 				--'------------------------------------------------------------------------
 				--'                           IFRAIN
 				--'------------------------------------------------------------------------
 				-- Проверяем наличие путей брожения внутри лагеря.
-				local stalker_walker = {_prior = 25, jobs = {}}
+				local stalker_ifrain = {_prior = 47, jobs = {}}
 				it = 1
 
-				while level.patrol_path_exists(gname.."_ifrain_"..it.."_walk") do
+				while level.patrol_path_exists(gname.."_ifrain_"..it) do
 					-- Необходимо вычитать количество работ из названия точки пути.
-					local way_name = gname.."_ifrain_"..it.."_walk"
+					local way_name = gname.."_ifrain_"..it
 					
 					-- добавляем должность
-					t = {_prior = 15,
+					t = {_prior = 47,
 						 job_id = {section = "logic@"..way_name, job_type = "path_job"},
 						 _precondition_params = {},
 						 _precondition_function = function(se_obj, smart, precond_params)
-														if level.rain_factor() > 0 then												
-															if smart.smart_alarm_time == nil then
-															  return true
-															end
-
-															if smart.safe_restr == nil then
-															  return true
-															end
-
-															if precond_params.is_safe_job == nil then
-															  precond_params.is_safe_job = xr_gulag.job_in_restrictor(smart, smart.safe_restr, way_name)
-															end
-															return precond_params.is_safe_job ~= false
-														end
+														return (level.rain_factor() > 0) and (smart.smart_alarm_time == nil)
 													end
 						}
-					table.insert(stalker_walker.jobs, t)
+					table.insert(stalker_ifrain.jobs, t)
 
 					-- добавляем описание должности в лтх.
 					local job_ltx = "[logic@"..way_name.."]\n"..
-									"active = walker@"..way_name.."\n"..
+									"active = kamp@"..way_name.."\n"..
 
-									"[walker@"..way_name.."]\n"..
-									"sound_idle = state\n"..
+									"[kamp@"..way_name.."]\n"..
 									"meet = meet@generic_lager\n"..
-									"path_walk = ifrain_"..it.."_walk\n"..
-									"def_state_standing = guard\n"..
-									"def_state_moving = patrol\n"
+									"center_point = ifrain_"..it.."\n"
 
-					if level.patrol_path_exists(gname.."_ifrain_"..it.."_look") then
-						job_ltx = job_ltx.."path_look = ifrain_"..it.."_look\n"
+					if level.patrol_path_exists(gname.."_ifrain_"..it.."_task") then
+						job_ltx = job_ltx .. "path_walk =" .. gname .. "_ifrain_"..it.."_task\n"
 					end
 
-					if smart.safe_restr ~= nil and xr_gulag.job_in_restrictor(smart, smart.safe_restr, way_name) then
-						job_ltx = job_ltx .. "invulnerable = {=npc_in_zone(smart.safe_restr)} true\n"
-					end
-
-					if smart.def_restr ~= nil then
-							job_ltx = job_ltx .."out_restr = "..smart.def_restr.."\n"
-					end
-
-					if smart.base_on_actor_control ~= nil and smart.base_on_actor_control.ignore_zone ~= nil 
-					and xr_gulag.job_in_restrictor(smart, smart.base_on_actor_control.ignore_zone, way_name) then
-						job_ltx = job_ltx .."combat_ignore_cond = {=npc_in_zone(smart.base_on_actor_control.ignore_zone)} true \n"..
-											"combat_ignore_keep_when_attacked = true \n"
-					end
 					ltx = ltx..job_ltx
 					it = it + 1
 				end
-				if it > 1 then table.insert(stalker_jobs.jobs, stalker_walker) end
+				if it > 1 then table.insert(stalker_jobs.jobs, stalker_ifrain) end
+				--'------------------------------------------------------------------------
+				--'                           IFRAIN
+				--'------------------------------------------------------------------------
+				
+				table.insert(job_table, stalker_jobs)
 
 --'------------------------------------------------------------------------
 --'         РАБОТЫ МОНСТРОВ
