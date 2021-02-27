@@ -55,3 +55,15 @@ function getNPC(fobj, sobj)
 		return fobj
 	end
 end
+
+function spwOnPoint(pname, section)
+	if section then
+		local p = patrol(pname)
+		return alife():create(section, p:point(0), p:level_vertex_id(0), p:game_vertex_id(0))
+	elseif string.sub(pname, -3) == 'spw' then
+		section = string.sub(pname, 0, -5)
+		if system_ini():section_exist(section) then
+			return pn.spwOnPoint(pname, section)
+		end
+	end
+end

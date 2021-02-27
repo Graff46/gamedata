@@ -38,7 +38,7 @@
 	</string>
 		
 	<string id="quest_gar_battery">
-		<text>Достать артефакт "Батарейка"</text>
+		<text>Артефакт "Батарейка"</text>
 	</string>
 		
 	<string id="quest_gar_battery_descr">
@@ -47,6 +47,18 @@
 	
 	<string id="quest_gar_battery2_descr">
 		<text>Отдать артефакт "Батарейка" Батьке</text>
+	</string>	
+	
+	<string id="gar_npc_kep">
+		<text>Кэп</text>
+	</string>	
+	
+	<string id="quest_gar_seek_kep_ttl">
+		<text>Найти Кэпа в подземельях</text>
+	</string>	
+	
+	<string id="quest_gar_seek_kep_descr">
+		<text>Найти Кэпа в подземельях</text>
 	</string>
 	
 </string_table>

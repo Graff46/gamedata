@@ -236,7 +236,7 @@ end
 function se_restrictor:on_register()
 	cse_alife_space_restrictor.on_register(self)
 	-- Проверяем кастомдату обьекта на наличие стори айди.
-	self.ini = pn.checkCD(self, 'anomalies')
+	self.ini = pn.checkCD(self, 'restrictors')
 	story_objects.check_spawn_ini_for_story_id(self, self.ini)
 
 	treasure_manager.get_treasure_manager():register_restrictor(self)
@@ -253,5 +253,5 @@ function se_restrictor:STATE_Read( packet, size )
 		return
 	end
 	
-	self.ini = pn.checkCD(self, 'anomalies')
+	self.ini = pn.checkCD(self, 'restrictors')
 end

@@ -1009,6 +1009,7 @@ function cfg_get_switch_conditions(ini, section, npc)
 	local t
 	local n = 1
 	if not ini:section_exist(tostring(section)) then
+		get_console():execute("not_section_exist:"..section)
 		return
 	end
 	local line_count = ini:line_count(section)
@@ -1046,6 +1047,7 @@ function cfg_get_switch_conditions(ini, section, npc)
 	add_conditions( cfg_get_npc_and_zone       , "on_npc_in_zone"        )
 	add_conditions( cfg_get_npc_and_zone       , "on_npc_not_in_zone"    )
 
+get_console():execute("not_section_exist:end")
 	return l
 end
 

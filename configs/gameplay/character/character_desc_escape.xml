@@ -9,10 +9,10 @@
 		<class>esc_npc_village</class>
 		<community>stalker</community>
 
-		<snd_config>characters_voice\human_02\stalker\</snd_config>
+		<snd_config>characters_voice\human_03\stalker\</snd_config>
 		<rank>160</rank>
 		<reputation>500</reputation>
-		<money min="1000" max="14000" infinitive="1" />
+		<money min="1000" max="14000" infinitive="0" />
 		<visual>actors\mod_hero\zabor</visual>
 
 		<supplies>
@@ -44,7 +44,7 @@
 		<snd_config>characters_voice\human_01\stalker\</snd_config>
 		<rank>160</rank>
 		<reputation>500</reputation>
-		<money min="1000" max="14000" infinitive="1" />
+		<money min="1000" max="14000" infinitive="0" />
 		<visual>actors\mod_hero\botanik</visual>
 
 		<supplies>
@@ -76,8 +76,8 @@
 		<snd_config>characters_voice\human_02\stalker\</snd_config>
 		<rank>160</rank>
 		<reputation>500</reputation>
-		<money min="1000" max="14000" infinitive="1" />
-		<visual>actors\stalker_neutral\stalker_neutral_1_face_2</visual>
+		<money min="1000" max="14000" infinitive="0" />
+		<visual>actors\mod_hero\galosh</visual>
 
 		<supplies>
       [spawn] \n
@@ -109,7 +109,7 @@
 		<snd_config>characters_voice\human_02\stalker\</snd_config>
 		<rank>160</rank>
 		<reputation>500</reputation>
-		<money min="1000" max="14000" infinitive="1" />
+		<money min="1000" max="14000" infinitive="0" />
 		<visual>actors\mod_hero\rast</visual>
 
 		<supplies>
@@ -142,7 +142,7 @@
 		<rank>160</rank>
 		<reputation>500</reputation>
 		<money min="1000" max="14000" infinitive="1" />
-		<visual>actors\stalker_neutral\stalker_neutral_2_face_7</visual>
+		<visual>actors\mod_hero\esc_trader</visual>
 
 		<supplies>
       [spawn] \n
@@ -174,7 +174,7 @@
 		<rank>160</rank>
 		<reputation>500</reputation>
 		<money min="1000" max="14000" infinitive="0" />
-		<visual>actors\stalker_neutral\stalker_neutral_2_face_7</visual>
+		<visual>actors\mod_hero\svistun</visual>
 
 		<supplies>
       [spawn] \n

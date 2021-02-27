@@ -2871,4 +2871,11 @@ function set_health(actor, npc, p)
 	npc.health = tonumber(p[1]) 
 end
 	
+function delete(actor, npc, p)
+	local obj = npc:id()
+	if p and p[1] then
+		obj = p[1]
+	end
+	alife():release(alife():object(obj), true)
+end
 	

@@ -1163,5 +1163,10 @@
 		<class>gar_trader</class>
 		<specific_character>gar_trader</specific_character>
 	</character>
+	
+	<character id="kep">
+		<class>kep</class>
+		<specific_character>kep</specific_character>
+	</character>
 
 </xml>

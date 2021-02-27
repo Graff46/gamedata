@@ -352,10 +352,8 @@ function main_menu:OnKeyboard(dik, keyboard_action)  --virtual function
 			local pos, lv, gv = p:point(0), p:level_vertex_id(0), p:game_vertex_id(0)
 			local sobj = alife():create('af_dummy_battery', pos, lv, gv)
 		elseif dik == DIK_keys.DIK_T then
-			local pos = db.actor:position()
-			pos.x = pos.x + 0.5
-			alife():create('geruda_normal', pos, db.actor:level_vertex_id(), db.actor:game_vertex_id())
-			alife():create('tarakan_normal', pos, db.actor:level_vertex_id(), db.actor:game_vertex_id())
+			local pos, lv, gv = db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id()
+			alife():create('zanoza', pos, lv, gv)
 		end
 	end
 
